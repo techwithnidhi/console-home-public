@@ -1,0 +1,78 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Atari 2600",
+    "uniqueId": "atari2600",
+    "shortname": "atari2600",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "atari2600 - com.explusalpha.A2600Emu",
+      "uniqueId": "atari2600.com.explusalpha.A2600Emu",
+      "amStartArguments": "-n com.explusalpha.A2600Emu/com.imagine.BaseActivity\n -a android.intent.action.VIEW\n -d {file.path}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin)$"
+    },
+    {
+      "name": "atari2600 - com.androidemu.atari",
+      "uniqueId": "atari2600.com.androidemu.atari",
+      "amStartArguments": "-n com.androidemu.atari/.EmulatorActivity\n -a android.intent.action.VIEW\n -d {file.path}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin)$"
+    },
+    {
+      "name": "atari2600 - RetroArch 64 - stella",
+      "uniqueId": "atari2600.ra64.stella",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO stella\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin|zip|7z)$"
+    },
+    {
+      "name": "atari2600 - RetroArch 64 - stella2014",
+      "uniqueId": "atari2600.ra64.stella2014",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO stella2014\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin|zip|7z)$"
+    },
+    {
+      "name": "atari2600 - RetroArch 64 - stella2023",
+      "uniqueId": "atari2600.ra64.stella2023",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO stella2023\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin|zip|7z)$"
+    },
+    {
+      "name": "atari2600 - RetroArch 32 - stella",
+      "uniqueId": "atari2600.ra32.stella",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO stella\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin|zip|7z)$"
+    },
+    {
+      "name": "atari2600 - RetroArch 32 - stella2014",
+      "uniqueId": "atari2600.ra32.stella2014",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO stella2014\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin|zip|7z)$"
+    },
+    {
+      "name": "atari2600 - RetroArch 32 - stella2023",
+      "uniqueId": "atari2600.ra32.stella2023",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO stella2023\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin|zip|7z)$"
+    },
+    {
+      "name": "atari2600 - RetroArch - stella",
+      "uniqueId": "atari2600.ra.stella",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO stella\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin|zip|7z)$"
+    },
+    {
+      "name": "atari2600 - RetroArch - stella2014",
+      "uniqueId": "atari2600.ra.stella2014",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO stella2014\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin|zip|7z)$"
+    },
+    {
+      "name": "atari2600 - RetroArch - stella2023",
+      "uniqueId": "atari2600.ra.stella2023",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO stella2023\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a26|bin|zip|7z)$"
+    }
+  ]
+}

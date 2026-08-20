@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "3DO",
+    "uniqueId": "3do",
+    "shortname": "3do",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "3do - RetroArch 64 - opera",
+      "uniqueId": "3do.ra64.opera",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO opera\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:chd|cue|iso)$"
+    },
+    {
+      "name": "3do - RetroArch 32 - opera",
+      "uniqueId": "3do.ra32.opera",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO opera\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:chd|cue|iso)$"
+    },
+    {
+      "name": "3do - RetroArch - opera",
+      "uniqueId": "3do.ra.opera",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO opera\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:chd|cue|iso)$"
+    }
+  ]
+}

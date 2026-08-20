@@ -1,0 +1,48 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Nintendo - Game & Watch",
+    "uniqueId": "gw",
+    "shortname": "gw",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "gw - com.seleuco.mame4droid 2024",
+      "uniqueId": "gw.com.seleuco.mame4d2024",
+      "amStartArguments": "-n com.seleuco.mame4d2024/com.seleuco.mame4droid.MAME4droid\n -a android.intent.action.VIEW\n -d {file.uri}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|7z)$"
+    },
+    {
+      "name": "gw - RetroArch 64 - gw",
+      "uniqueId": "gw.ra64.gw",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gw\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mgw|zip|7z)$"
+    },
+    {
+      "name": "gw - RetroArch 64 - mess",
+      "uniqueId": "gw.ra64.mamemess",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mamemess\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|7z)$"
+    },
+    {
+      "name": "gw - RetroArch 32 - gw",
+      "uniqueId": "gw.ra32.gw",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gw\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mgw|zip|7z)$"
+    },
+    {
+      "name": "gw - RetroArch - gw",
+      "uniqueId": "gw.ra.gw",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gw\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mgw|zip|7z)$"
+    },
+    {
+      "name": "gw - RetroArch - mess",
+      "uniqueId": "gw.ra.mamemess",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mamemess\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|7z)$"
+    }
+  ]
+}

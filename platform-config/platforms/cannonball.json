@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Cannonball OutRun Engine",
+    "uniqueId": "cannonball",
+    "shortname": "cannonball",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "cannonball - RetroArch 64 - cannonball",
+      "uniqueId": "cannonball.ra64.cannonball",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO cannonball\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:game|88)$"
+    },
+    {
+      "name": "cannonball - RetroArch 32 - cannonball",
+      "uniqueId": "cannonball.ra32.cannonball",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO cannonball\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:game|88)$"
+    },
+    {
+      "name": "cannonball - RetroArch - cannonball",
+      "uniqueId": "cannonball.ra.cannonball",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO cannonball\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:game|88)$"
+    }
+  ]
+}

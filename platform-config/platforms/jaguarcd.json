@@ -1,0 +1,36 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Atari Jaguar CD",
+    "uniqueId": "jaguarcd",
+    "shortname": "jaguarcd",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "jaguarcd - IrataJaguar",
+      "uniqueId": "jaguarcd.ru.vastness.altmer.iratajaguar",
+      "amStartArguments": "-n ru.vastness.altmer.iratajaguar/ru.vastness.altmer.iratajaguar.MainActivity\n -e rom {file.path}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:j64|jag|rom|abs|cof|bin|prg|zip|7z)$"
+    },
+    {
+      "name": "jaguarcd - RetroArch 64 - Virtual Jaguar",
+      "uniqueId": "jaguarcd.ra64.virtualjaguar",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO virtualjaguar\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:j64|jag|rom|abs|cof|bin|prg|zip|7z)$"
+    },
+    {
+      "name": "jaguarcd - RetroArch 32 - Virtual Jaguar",
+      "uniqueId": "jaguarcd.ra32.virtualjaguar",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO virtualjaguar\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:j64|jag|rom|abs|cof|bin|prg|zip|7z)$"
+    },
+    {
+      "name": "jaguarcd - RetroArch - Virtual Jaguar",
+      "uniqueId": "jaguarcd.ra.virtualjaguar",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO virtualjaguar\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:j64|jag|rom|abs|cof|bin|prg|zip|7z)$"
+    }
+  ]
+}

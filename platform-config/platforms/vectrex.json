@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Vectrex",
+    "uniqueId": "vectrex",
+    "shortname": "vectrex",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "vectrex - RetroArch 64 - vecx",
+      "uniqueId": "vectrex.ra64.vecx",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vecx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|vec|zip|7z)$"
+    },
+    {
+      "name": "vectrex - RetroArch 32 - vecx",
+      "uniqueId": "vectrex.ra32.vecx",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vecx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|vec|zip|7z)$"
+    },
+    {
+      "name": "vectrex - RetroArch - vecx",
+      "uniqueId": "vectrex.ra.vecx",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vecx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|vec|zip|7z)$"
+    }
+  ]
+}

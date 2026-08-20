@@ -1,0 +1,156 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Nintendo DS",
+    "uniqueId": "nds",
+    "shortname": "nds",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "nds - MelonDS",
+      "uniqueId": "nds.me.magnum.melonds",
+      "amStartArguments": "-a me.magnum.melonds.LAUNCH_ROM\n-n me.magnum.melonds/.ui.emulator.EmulatorActivity\n-e uri {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - Drastic",
+      "uniqueId": "nds.com.dsemu.drastic",
+      "amStartArguments": "-n com.dsemu.drastic/.DraSticActivity\n-d {file.uri}\n--activity-clear-task\n--activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|rar|zip|7z)$"
+    },
+    {
+      "name": "nds - MelonDS Nightly",
+      "uniqueId": "nds.me.magnum.melonds.nightly",
+      "amStartArguments": "-a me.magnum.melonds.nightly.LAUNCH_ROM\n-n me.magnum.melonds.nightly/me.magnum.melonds.ui.emulator.EmulatorActivity\n-e uri {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - MelonDS Dev (Dual Screen Fork)",
+      "uniqueId": "nds.me.magnum.melonds.dev",
+      "amStartArguments": "-a me.magnum.melonds.dev.LAUNCH_ROM\n-n me.magnum.melonds.dev/me.magnum.melonds.ui.emulator.EmulatorActivity\n-e uri {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - MelonDualDS",
+      "uniqueId": "nds.me.magnum.melondualds",
+      "amStartArguments": "-a me.magnum.melonds.dev.LAUNCH_ROM\n-n me.magnum.melondualds/me.magnum.melonds.ui.emulator.EmulatorActivity\n-e uri {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - NooDS",
+      "uniqueId": "nds.com.hydra.noods",
+      "amStartArguments": "-n com.hydra.noods/.FileBrowser\n -e LaunchPath {file.path}",
+      "acceptedFilenameRegex": "^(.*).(?:nds)$"
+    },
+    {
+      "name": "nds - SkyEmu",
+      "uniqueId": "nds.com.sky.SkyEmu",
+      "amStartArguments": "-n com.sky.SkyEmu/.EnhancedNativeActivity\n -a android.intent.action.VIEW\n -d {file.uri}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*).(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch 64 - melonds",
+      "uniqueId": "nds.ra64.melonds",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO melonds\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch 64 - melonds ds",
+      "uniqueId": "nds.ra64.melondsds",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO melondsds\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch 64 - desmume",
+      "uniqueId": "nds.ra64.desmume",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch 64 - desmume2015",
+      "uniqueId": "nds.ra64.desmume2015",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume2015\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch 64 - noods",
+      "uniqueId": "nds.ra64.noods",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO noods\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds)$"
+    },
+    {
+      "name": "nds - RetroArch 64 - skyemu",
+      "uniqueId": "nds.ra64.skyemu",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO skyemu\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch 32 - melonds",
+      "uniqueId": "nds.ra32.melonds",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO melonds\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch 32 - desmume",
+      "uniqueId": "nds.ra32.desmume",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch 32 - desmume2015",
+      "uniqueId": "nds.ra32.desmume2015",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume2015\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch 32 - noods",
+      "uniqueId": "nds.ra32.noods",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO noods\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds)$"
+    },
+    {
+      "name": "nds - RetroArch 32 - skyemu",
+      "uniqueId": "nds.ra32.skyemu",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO skyemu\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch - melonds",
+      "uniqueId": "nds.ra.melonds",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO melonds\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch - melonds ds",
+      "uniqueId": "nds.ra.melondsds",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO melondsds\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch - desmume",
+      "uniqueId": "nds.ra.desmume",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch - desmume2015",
+      "uniqueId": "nds.ra.desmume2015",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume2015\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch - noods",
+      "uniqueId": "nds.ra.noods",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO noods\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    },
+    {
+      "name": "nds - RetroArch - skyemu",
+      "uniqueId": "nds.ra.skyemu",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO skyemu\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    }
+  ]
+}

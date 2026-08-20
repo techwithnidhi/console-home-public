@@ -1,0 +1,48 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Sega Genesis - MSU",
+    "uniqueId": "genesismsu",
+    "shortname": "genesismsu",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "genesismsu - RetroArch 64 - genesis_plus_gx",
+      "uniqueId": "genesismsu.ra64.genesis_plus_gx",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:md|zip|7z)$"
+    },
+    {
+      "name": "genesismsu - RetroArch 64 - genesis_plus_gx_wide",
+      "uniqueId": "genesismsu.ra64.genesis_plus_gx_wide",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx_wide\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:md|zip|7z)$"
+    },
+    {
+      "name": "genesismsu - RetroArch 32 - genesis_plus_gx",
+      "uniqueId": "genesismsu.ra32.genesis_plus_gx",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:md|zip|7z)$"
+    },
+    {
+      "name": "genesismsu - RetroArch 32 - genesis_plus_gx_wide",
+      "uniqueId": "genesismsu.ra32.genesis_plus_gx_wide",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx_wide\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:md|zip|7z)$"
+    },
+    {
+      "name": "genesismsu - RetroArch - genesis_plus_gx",
+      "uniqueId": "genesismsu.ra.genesis_plus_gx",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:md|zip|7z)$"
+    },
+    {
+      "name": "genesismsu - RetroArch - genesis_plus_gx_wide",
+      "uniqueId": "genesismsu.ra.genesis_plus_gx_wide",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx_wide\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:md|zip|7z)$"
+    }
+  ]
+}

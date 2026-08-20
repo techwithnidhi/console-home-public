@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "CHIP-8",
+    "uniqueId": "chip8",
+    "shortname": "chip8",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "chip8 - RetroArch 64 - jaxe",
+      "uniqueId": "chip8.ra64.jaxe",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO jaxe\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ch8|zip)$"
+    },
+    {
+      "name": "chip8 - RetroArch 32 - jaxe",
+      "uniqueId": "chip8.ra32.jaxe",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO jaxe\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ch8|zip)$"
+    },
+    {
+      "name": "chip8 - RetroArch - jaxe",
+      "uniqueId": "chip8.ra.jaxe",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO jaxe\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ch8|zip)$"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Sega Naomi",
+    "uniqueId": "naomi",
+    "shortname": "naomi",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*(?<!bin|chd)$"
+  },
+  "playerList": [
+    {
+      "name": "naomi - com.flycast.emulator",
+      "uniqueId": "naomi.com.flycast.emulator",
+      "amStartArguments": "-n com.flycast.emulator/com.flycast.emulator.MainActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|lst|zip|dat)$"
+    },
+    {
+      "name": "naomi - com.flycast.emulator (dev build)",
+      "uniqueId": "naomi.com.flycast.emulator",
+      "amStartArguments": "-n com.flycast.emulator/com.flycast.emulator.MainActivity\n -a android.intent.action.VIEW\n -d {file.path}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|lst|zip|dat)$"
+    },
+    {
+      "name": "naomi - RetroArch 64 - flycast",
+      "uniqueId": "naomi.ra64.flycast",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO flycast\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|lst|zip|dat)$"
+    },
+    {
+      "name": "naomi - RetroArch 32 - flycast",
+      "uniqueId": "naomi.ra32.flycast",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO flycast\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|lst|zip|dat)$"
+    },
+    {
+      "name": "naomi - RetroArch - flycast",
+      "uniqueId": "naomi.ra.flycast",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO flycast\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|lst|zip|dat)$"
+    }
+  ]
+}

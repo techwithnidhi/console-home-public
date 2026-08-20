@@ -1,0 +1,48 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Cave Story Game Engine",
+    "uniqueId": "cavestory",
+    "shortname": "cavestory",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "nxengine - RetroArch 64 - nxengine",
+      "uniqueId": "cavestory.ra64.nxengine",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO nxengine\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:exe)$"
+    },
+    {
+      "name": "nxengine - RetroArch 64 - drs",
+      "uniqueId": "cavestory.ra64.drs",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO doukutsu_rs\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:exe)$"
+    },
+    {
+      "name": "nxengine - RetroArch 32 - nxengine",
+      "uniqueId": "cavestory.ra32.nxengine",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO nxengine\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:exe)$"
+    },
+    {
+      "name": "nxengine - RetroArch 32 - drs",
+      "uniqueId": "cavestory.ra32.drs",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO doukutsu_rs\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:exe)$"
+    },
+    {
+      "name": "nxengine - RetroArch - nxengine",
+      "uniqueId": "cavestory.ra.nxengine",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO nxengine\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:exe)$"
+    },
+    {
+      "name": "nxengine - RetroArch - drs",
+      "uniqueId": "cavestory.ra.drs",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO doukutsu_rs\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:exe)$"
+    }
+  ]
+}

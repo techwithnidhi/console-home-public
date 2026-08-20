@@ -1,0 +1,18 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Nintendo Wii U",
+    "uniqueId": "wiiu",
+    "shortname": "wiiu",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "wiiu - CEMU",
+      "uniqueId": "wiiu.info.cemu.Cemu",
+      "amStartArguments": "-n info.cemu.cemu/.emulation.EmulationActivity\n -d {file.uri}\n --activity-clear-task\n --activity-clear-top\n",
+      "acceptedFilenameRegex": "^(.*).(?:wua|wud|wux|rpx)$"
+    }
+  ]
+}

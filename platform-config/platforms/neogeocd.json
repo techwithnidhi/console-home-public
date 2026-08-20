@@ -1,0 +1,48 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Neo Geo CD",
+    "uniqueId": "neogeocd",
+    "shortname": "neogeocd",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "neogeocd - RetroArch 64 - neocd",
+      "uniqueId": "neogeocd.ra64.neocd",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO neocd\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:chd|cue)$"
+    },
+    {
+      "name": "neogeocd - RetroArch 64 - fbneo",
+      "uniqueId": "neogeocd.ra64.fbneo",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbneo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cue)$"
+    },
+    {
+      "name": "neogeocd - RetroArch 32 - neocd",
+      "uniqueId": "neogeocd.ra32.neocd",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO neocd\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:chd|cue)$"
+    },
+    {
+      "name": "neogeocd - RetroArch 32 - fbneo",
+      "uniqueId": "neogeocd.ra32.fbneo",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbneo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cue)$"
+    },
+    {
+      "name": "neogeocd - RetroArch - neocd",
+      "uniqueId": "neogeocd.ra.neocd",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO neocd\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:chd|cue)$"
+    },
+    {
+      "name": "neogeocd - RetroArch - fbneo",
+      "uniqueId": "neogeocd.ra.fbneo",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbneo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cue)$"
+    }
+  ]
+}

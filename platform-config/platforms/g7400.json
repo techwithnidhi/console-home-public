@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Philips Videopac+ G7400",
+    "uniqueId": "g7400",
+    "shortname": "g7400",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "g7400 - RetroArch 64 - o2em",
+      "uniqueId": "g7400.ra64.o2em",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO o2em\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|zip|7z)$"
+    },
+    {
+      "name": "g7400 - RetroArch 32 - o2em",
+      "uniqueId": "g7400.ra32.o2em",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO o2em\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|zip|7z)$"
+    },
+    {
+      "name": "g7400 - RetroArch - o2em",
+      "uniqueId": "g7400.ra.o2em",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO o2em\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|zip|7z)$"
+    }
+  ]
+}

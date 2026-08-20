@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Magnavox Odyssey 2",
+    "uniqueId": "odyssey2",
+    "shortname": "odyssey2",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "odyssey2 - RetroArch 64 - o2em",
+      "uniqueId": "odyssey2.ra64.o2em",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO o2em\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|zip|7z)$"
+    },
+    {
+      "name": "odyssey2 - RetroArch 32 - o2em",
+      "uniqueId": "odyssey2.ra32.o2em",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO o2em\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|zip|7z)$"
+    },
+    {
+      "name": "odyssey2 - RetroArch - o2em",
+      "uniqueId": "odyssey2.ra.o2em",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO o2em\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|zip|7z)$"
+    }
+  ]
+}

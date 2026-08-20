@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Sharp X1",
+    "uniqueId": "x1",
+    "shortname": "x1",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "x1 - RetroArch 64 - x1",
+      "uniqueId": "x1.ra64.x1",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO x1\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:2hd|88d|cmd|d88|dim|dup|hdf|hdm|img|m3u|xdf|zip|7z)$"
+    },
+    {
+      "name": "x1 - RetroArch 32 - x1",
+      "uniqueId": "x1.ra32.x1",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO x1\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:2hd|88d|cmd|d88|dim|dup|hdf|hdm|img|m3u|xdf|zip|7z)$"
+    },
+    {
+      "name": "x1 - RetroArch - x1",
+      "uniqueId": "x1.ra.x1",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO x1\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:2hd|88d|cmd|d88|dim|dup|hdf|hdm|img|m3u|xdf|zip|7z)$"
+    }
+  ]
+}

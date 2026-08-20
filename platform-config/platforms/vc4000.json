@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Interton VC 4000",
+    "uniqueId": "vc4000",
+    "shortname": "vc4000",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "vc4000 - DroidArcadia",
+      "uniqueId": "vc4000.com.amigan.droidarcadia",
+      "amStartArguments": "-n com.amigan.droidarcadia/.MainActivity\n -a android.intent.action.VIEW\n -d {file.uri}\n -t application/zip\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "vc4000 - RetroArch 64 - mess",
+      "uniqueId": "vc4000.ra64.mess",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mamemess\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cmd)$"
+    },
+    {
+      "name": "vc4000 - RetroArch - mess",
+      "uniqueId": "vc4000.ra.mess",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mamemess\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cmd)$"
+    }
+  ]
+}

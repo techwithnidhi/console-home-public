@@ -1,0 +1,72 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Nintendo WiiWare",
+    "uniqueId": "wiiware",
+    "shortname": "wiiware",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "wiiware - Dolphin (Official)",
+      "uniqueId": "wiiware.org.dolphinemu.dolphinemu",
+      "amStartArguments": "-n org.dolphinemu.dolphinemu/.ui.main.MainActivity\n -a android.intent.action.MAIN\n -e AutoStartFile {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:wad)$"
+    },
+    {
+      "name": "wiiware - Dolphin handheld",
+      "uniqueId": "wiiware.org.dolphinemu.handheld",
+      "amStartArguments": "-n org.dolphinemu.handheld/org.dolphinemu.dolphinemu.ui.main.MainActivity\n -a android.intent.action.VIEW\n -e AutoStartFile {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:wad)$"
+    },
+    {
+      "name": "wiiware - Dolphin org.mm.jr fork",
+      "uniqueId": "wiiware.org.mm.jr",
+      "amStartArguments": "-n org.mm.jr/org.dolphinemu.dolphinemu.ui.main.MainActivity\n -a android.intent.action.VIEW\n -e AutoStartFile {file.path}",
+      "acceptedFilenameRegex": "^(.*).(?:wad)$"
+    },
+    {
+      "name": "wiiware - Dolphin org.mm.j fork",
+      "uniqueId": "wiiware.org.mm.j",
+      "amStartArguments": "-n org.mm.j/org.dolphinemu.dolphinemu.ui.main.MainActivity\n -a android.intent.action.VIEW\n -e AutoStartFile {file.path}",
+      "acceptedFilenameRegex": "^(.*).(?:wad)$"
+    },
+    {
+      "name": "wiiware - Dolphin mmjr",
+      "uniqueId": "wiiware.org.dolphinemu.mmjr",
+      "amStartArguments": "-n org.dolphinemu.mmjr/org.dolphinemu.dolphinemu.ui.main.MainActivity\n -a android.intent.action.VIEW\n -e AutoStartFile {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:wad)$"
+    },
+    {
+      "name": "wiiware - Dolphin mmjr3",
+      "uniqueId": "wiiware.org.dolphinemu.mmjr3",
+      "amStartArguments": "-n org.dolphinemu.mmjr3/org.dolphinemu.dolphinemu.ui.main.MainActivity\n -a android.intent.action.VIEW\n -e AutoStartFile {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:wad)$"
+    },
+    {
+      "name": "wiiware - Dolphin Ishiiruka",
+      "uniqueId": "wiiware.org.dolphin.ishiirukadark",
+      "amStartArguments": "-n org.dolphin.ishiirukadark/org.dolphinemu.dolphinemu.ui.main.MainActivity\n -a android.intent.action.VIEW\n -e AutoStartFile {file.path}",
+      "acceptedFilenameRegex": "^(.*).(?:wad)$"
+    },
+    {
+      "name": "wiiware - Dolphin (Debug Build)",
+      "uniqueId": "wiiware.org.dolphinemu.dolphinemu.debug",
+      "amStartArguments": "-n org.dolphinemu.dolphinemu.debug/org.dolphinemu.dolphinemu.ui.main.MainActivity\n -a android.intent.action.MAIN\n -e AutoStartFile {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:wad)$"
+    },
+    {
+      "name": "wiiware - RetroArch 64 - dolphin",
+      "uniqueId": "wiiware.ra64.dolphin",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO dolphin\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:wad)$"
+    },
+    {
+      "name": "wiiware - RetroArch - dolphin",
+      "uniqueId": "wiiware.ra.dolphin",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO dolphin\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:wad)$"
+    }
+  ]
+}

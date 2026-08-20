@@ -1,0 +1,11 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Elektor TV Games Computer",
+    "uniqueId": "elektor",
+    "shortname": "elektor",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": []
+}

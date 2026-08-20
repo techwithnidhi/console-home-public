@@ -1,0 +1,90 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Commodore 64",
+    "uniqueId": "c64",
+    "shortname": "c64",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "c64 - com.explusalpha.C64Emu",
+      "uniqueId": "c64.com.explusalpha.C64Emu",
+      "amStartArguments": "-n com.explusalpha.C64Emu/com.imagine.BaseActivity\n -a android.intent.action.VIEW\n -d {file.path}\n -t application/zip",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|crt|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|lnx|p00|prg|t64|tap|x64|x6z|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch 64 - frodo",
+      "uniqueId": "c64.ra64.frodo",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO frodo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:d64|lnx|p00|t64|x64|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch 64 - x64sdl",
+      "uniqueId": "c64.ra64.x64sdl",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO x64sdl\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|crt|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|p00|prg|t64|tap|x64|x6z|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch 64 - vice_x64",
+      "uniqueId": "c64.ra64.vice_x64",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vice_x64\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cmd|crt|d2m|d4m|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|m3u|nbz|nib|p00|prg|t64|tap|vfl|vsf|x64|x6z|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch 64 - vice_x64sc",
+      "uniqueId": "c64.ra64.vice_x64sc",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vice_x64sc\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cmd|crt|d2m|d4m|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|m3u|nbz|nib|p00|prg|t64|tap|vfl|vsf|x64|x6z|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch 32 - frodo",
+      "uniqueId": "c64.ra32.frodo",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO frodo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:d64|lnx|p00|t64|x64|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch 32 - x64sdl",
+      "uniqueId": "c64.ra32.x64sdl",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO x64sdl\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|crt|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|p00|prg|t64|tap|x64|x6z|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch 32 - vice_x64",
+      "uniqueId": "c64.ra32.vice_x64",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vice_x64\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cmd|crt|d2m|d4m|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|m3u|nbz|nib|p00|prg|t64|tap|vfl|vsf|x64|x6z|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch 32 - vice_x64sc",
+      "uniqueId": "c64.ra32.vice_x64sc",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vice_x64sc\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cmd|crt|d2m|d4m|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|m3u|nbz|nib|p00|prg|t64|tap|vfl|vsf|x64|x6z|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch - frodo",
+      "uniqueId": "c64.ra.frodo",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO frodo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:d64|lnx|p00|t64|x64|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch - x64sdl",
+      "uniqueId": "c64.ra.x64sdl",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO x64sdl\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|crt|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|p00|prg|t64|tap|x64|x6z|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch - vice_x64",
+      "uniqueId": "c64.ra.vice_x64",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vice_x64\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cmd|crt|d2m|d4m|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|m3u|nbz|nib|p00|prg|t64|tap|vfl|vsf|x64|x6z|zip)$"
+    },
+    {
+      "name": "c64 - RetroArch - vice_x64sc",
+      "uniqueId": "c64.ra.vice_x64sc",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vice_x64sc\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cmd|crt|d2m|d4m|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|m3u|nbz|nib|p00|prg|t64|tap|vfl|vsf|x64|x6z|zip)$"
+    }
+  ]
+}

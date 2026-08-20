@@ -1,0 +1,72 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "CP System II",
+    "uniqueId": "cps2",
+    "shortname": "cps2",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "cps2 - NEO.EMU",
+      "uniqueId": "cps2.com.explusalpha.neoemu",
+      "amStartArguments": "-n com.explusalpha.neoemu/com.imagine.BaseActivity\n -d {file.path}\n",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "cps2 - RetroArch 64 - fbneo",
+      "uniqueId": "cps2.ra64.fbneo",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbneo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|zip)$"
+    },
+    {
+      "name": "cps2 - RetroArch 64 - fbalpha2012",
+      "uniqueId": "cps2.ra64.fbalpha2012",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbalpha2012\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|iso|zip)$"
+    },
+    {
+      "name": "cps2 - RetroArch 64 - fbalpha2012_cps2",
+      "uniqueId": "cps2.ra64.fbalpha2012_cps2",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbalpha2012_cps2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "cps1 - RetroArch 32 - fbneo",
+      "uniqueId": "cps2.ra32.fbneo",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbneo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|zip)$"
+    },
+    {
+      "name": "cps2 - RetroArch 32 - fbalpha2012",
+      "uniqueId": "cps2.ra32.fbalpha2012",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbalpha2012\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|iso|zip)$"
+    },
+    {
+      "name": "cps2 - RetroArch 32 - fbalpha2012_cps2",
+      "uniqueId": "cps2.ra32.fbalpha2012_cps2",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbalpha2012_cps2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "cps2 - RetroArch - fbneo",
+      "uniqueId": "cps2.ra.fbneo",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbneo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|zip)$"
+    },
+    {
+      "name": "cps2 - RetroArch - fbalpha2012",
+      "uniqueId": "cps2.ra.fbalpha2012",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbalpha2012\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|iso|zip)$"
+    },
+    {
+      "name": "cps2 - RetroArch - fbalpha2012_cps2",
+      "uniqueId": "cps2.ra.fbalpha2012_cps2",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbalpha2012_cps2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    }
+  ]
+}

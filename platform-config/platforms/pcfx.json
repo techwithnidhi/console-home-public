@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "NEC PC-FX",
+    "uniqueId": "pcfx",
+    "shortname": "pcfx",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "pcfx - Retroarch 64 - beetle pcfx",
+      "uniqueId": "pcfx.ra64.mednafen_pcfx",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n-e ROM {file.path}\n -e LIBRETRO mednafen_pcfx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:cue|ccd|toc|chd)$"
+    },
+    {
+      "name": "pcfx - Retroarch 32 - beetle pcfx",
+      "uniqueId": "pcfx.ra32.mednafen_pcfx",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n-e ROM {file.path}\n -e LIBRETRO mednafen_pcfx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:cue|ccd|toc|chd)$"
+    },
+    {
+      "name": "pcfx - Retroarch - beetle pcfx",
+      "uniqueId": "pcfx.ra.mednafen_pcfx",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n-e ROM {file.path}\n -e LIBRETRO mednafen_pcfx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:cue|ccd|toc|chd)$"
+    }
+  ]
+}

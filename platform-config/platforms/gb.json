@@ -1,0 +1,216 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Nintendo - Game Boy",
+    "uniqueId": "gb",
+    "shortname": "gb",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "gb - Pizza Boy C Basic",
+      "uniqueId": "gb.it.dbtecno.pizzaboy",
+      "amStartArguments": "-n it.dbtecno.pizzaboy/it.dbtecno.pizzaboy.MainActivity\n -e rom_uri {file.uri}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|gbs|zip|7z)$"
+    },
+    {
+      "name": "gb - Pizza Boy C Pro",
+      "uniqueId": "gb.it.dbtecno.pizzaboypro",
+      "amStartArguments": "-n it.dbtecno.pizzaboypro/it.dbtecno.pizzaboypro.MainActivity\n -e rom_uri {file.uri}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|gbs|zip|7z)$"
+    },
+    {
+      "name": "gb - SkyEmu",
+      "uniqueId": "gb.com.sky.SkyEmu",
+      "amStartArguments": "-n com.sky.SkyEmu/.EnhancedNativeActivity\n -a android.intent.action.VIEW\n -d {file.uri}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|zip)$"
+    },
+    {
+      "name": "gb - com.explusalpha.GbcEmu",
+      "uniqueId": "gb.com.explusalpha.GbcEmu",
+      "amStartArguments": "-n com.explusalpha.GbcEmu/com.imagine.BaseActivity\n -a android.intent.action.VIEW\n -d {file.uri}\n -t application/zip",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cgb|dmg|gb|gbc|gbs|rom|sgb)$"
+    },
+    {
+      "name": "gb - com.fastemulator.gbcfree",
+      "uniqueId": "gb.com.fastemulator.gbcfree",
+      "amStartArguments": "-n com.fastemulator.gbcfree/.EmulatorActivity\n -a android.intent.action.VIEW\n -d {file.path}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cgb|dmg|gb|gbc|gbs|rom|sgb)$"
+    },
+    {
+      "name": "gb - com.fastemulator.gbc",
+      "uniqueId": "gb.com.fastemulator.gbc",
+      "amStartArguments": "-n com.fastemulator.gbc/.EmulatorActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cgb|dmg|gb|gbc|gbs|rom|sgb)$"
+    },
+    {
+      "name": "gb - Linkboy",
+      "uniqueId": "gb.com.pixelrespawn.linkboy",
+      "amStartArguments": "-n com.pixelrespawn.linkboy/.EmulatorActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cgb|dmg|gb|gbc|gbs|rom|sgb)$"
+    },
+    {
+      "name": "gb - RetroArch 64 - gambatte",
+      "uniqueId": "gb.ra64.gambatte",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gambatte\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dmg|gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 64 - gearboy",
+      "uniqueId": "gb.ra64.gearboy",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gearboy\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cgb|dmg|gb|gbc|sgb|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 64 - sameboy",
+      "uniqueId": "gb.ra64.sameboy",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO sameboy\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 64 - tgbdual",
+      "uniqueId": "gb.ra64.tgbdual",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO tgbdual\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|sgb|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 64 - doublecherrygb",
+      "uniqueId": "gb.ra64.DoubleCherryGB",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO DoubleCherryGB\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|dmg|cgb|sgb|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 64 - mesen-s",
+      "uniqueId": "gb.ra64.mesen-s",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mesen-s\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 64 - vbam",
+      "uniqueId": "gb.ra64.vbam",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vbam\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dmg|gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 64 - mgba",
+      "uniqueId": "gb.ra64.mgba",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mgba\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dmg|gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 64 - skyemu",
+      "uniqueId": "gb.ra64.skyemu",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO skyemu\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 32 - gambatte",
+      "uniqueId": "gb.ra32.gambatte",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gambatte\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dmg|gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 32 - gearboy",
+      "uniqueId": "gb.ra32.gearboy",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gearboy\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cgb|dmg|gb|gbc|sgb|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 32 - sameboy",
+      "uniqueId": "gb.ra32.sameboy",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO sameboy\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 32 - tgbdual",
+      "uniqueId": "gb.ra32.tgbdual",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO tgbdual\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|sgb|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 32 - doublecherrygb",
+      "uniqueId": "gb.ra32.DoubleCherryGB",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO DoubleCherryGB\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|dmg|cgb|sgb|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 32 - mesen-s",
+      "uniqueId": "gb.ra32.mesen-s",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mesen-s\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 32 - vbam",
+      "uniqueId": "gb.ra32.vbam",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vbam\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 32 - mgba",
+      "uniqueId": "gb.ra32.mgba",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mgba\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch 32 - skyemu",
+      "uniqueId": "gb.ra32.skyemu",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO skyemu\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch - gambatte",
+      "uniqueId": "gb.ra.gambatte",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gambatte\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dmg|gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch - gearboy",
+      "uniqueId": "gb.ra.gearboy",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gearboy\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cgb|dmg|gb|gbc|sgb|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch - sameboy",
+      "uniqueId": "gb.ra.sameboy",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO sameboy\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch - tgbdual",
+      "uniqueId": "gb.ra.tgbdual",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO tgbdual\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|sgb|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch - doublecherrygb",
+      "uniqueId": "gb.ra.DoubleCherryGB",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO DoubleCherryGB\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|dmg|cgb|sgb|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch - mesen-s",
+      "uniqueId": "gb.ra.mesen-s",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mesen-s\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch - vbam",
+      "uniqueId": "gb.ra.vbam",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vbam\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dmg|gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch - mgba",
+      "uniqueId": "gb.ra.mgba",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mgba\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|gbc|zip|7z)$"
+    },
+    {
+      "name": "gb - RetroArch - skyemu",
+      "uniqueId": "gb.ra.skyemu",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO skyemu\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gb|zip|7z)$"
+    }
+  ]
+}

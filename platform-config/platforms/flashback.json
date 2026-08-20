@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Flashback Game Engine",
+    "uniqueId": "flashback",
+    "shortname": "flashback",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "flashback - RetroArch 64 - reminiscence",
+      "uniqueId": "flashback.ra64.reminiscence",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO reminiscence\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:aba|lev|map|seq)$"
+    },
+    {
+      "name": "flashback - RetroArch 32 - reminiscence",
+      "uniqueId": "flashback.ra32.reminiscence",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO reminiscence\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:aba|lev|map|seq)$"
+    },
+    {
+      "name": "flashback - RetroArch - reminiscence",
+      "uniqueId": "flashback.ra.reminiscence",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO reminiscence\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:aba|lev|map|seq)$"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Java Me",
+    "uniqueId": "j2me",
+    "shortname": "j2me",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "j2me - ru.playsoftware.j2meloader",
+      "uniqueId": "j2me.ru.playsoftware.j2meloader",
+      "amStartArguments": "-n ru.playsoftware.j2meloader/ru.playsoftware.j2meloader.MainActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:java|jar)$"
+    },
+    {
+      "name": "j2me - jl-mod",
+      "uniqueId": "j2me.ru.woesss.j2meloader",
+      "amStartArguments": "-n ru.woesss.j2meloader/ru.playsoftware.j2meloader.MainActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:java|jar)$"
+    },
+    {
+      "name": "j2me - RetroArch 64 - squirreljme",
+      "uniqueId": "j2me.ra64.squirreljme",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO squirreljme\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:jad|jam|jar|kjx|sqc)$"
+    },
+    {
+      "name": "j2me - RetroArch 32 - squirreljme",
+      "uniqueId": "j2me.ra32.squirreljme",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO squirreljme\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:jad|jam|jar|kjx|sqc)$"
+    },
+    {
+      "name": "j2me - RetroArch - squirreljme",
+      "uniqueId": "j2me.ra.squirreljme",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO squirreljme\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:jad|jam|jar|kjx|sqc)$"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "NeoGeo Pocket",
+    "uniqueId": "ngp",
+    "shortname": "ngp",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "ngp - NGP.EMU",
+      "uniqueId": "ngp.com.explusalpha.NgpEmu",
+      "amStartArguments": "-n com.explusalpha.NgpEmu/com.imagine.BaseActivity\n -d {file.path}\n -t application/zip",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|ngp|ngc|7z)$"
+    },
+    {
+      "name": "ngp - RetroArch 64 - Beetle NeoPop",
+      "uniqueId": "ngp.ra64.mednafen_ngp",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_ngp\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|ngp|ngc|7z)$"
+    },
+    {
+      "name": "ngp - RetroArch 64 - RACE",
+      "uniqueId": "ngp.ra64.race",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO race\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|ngp|ngc|7z)$"
+    },
+    {
+      "name": "ngp - RetroArch 32 - Beetle NeoPop",
+      "uniqueId": "ngp.ra32.mednafen_ngp",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_ngp\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|ngp|ngc|7z)$"
+    },
+    {
+      "name": "ngp - RetroArch 32 - RACE",
+      "uniqueId": "ngp.ra32.race",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO race\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|ngp|ngc|7z)$"
+    },
+    {
+      "name": "ngp - RetroArch - Beetle NeoPop",
+      "uniqueId": "ngp.ra.mednafen_ngp",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_ngp\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|ngp|ngc|7z)$"
+    },
+    {
+      "name": "ngp - RetroArch - RACE",
+      "uniqueId": "ngp.ra.race",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO race\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip|ngp|ngc|7z)$"
+    }
+  ]
+}

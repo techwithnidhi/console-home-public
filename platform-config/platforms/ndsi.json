@@ -1,0 +1,114 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Nintendo DSi",
+    "uniqueId": "ndsi",
+    "shortname": "ndsi",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "ndsi - MelonDS",
+      "uniqueId": "ndsi.me.magnum.melonds",
+      "amStartArguments": "-a me.magnum.melonds.LAUNCH_ROM\n-n me.magnum.melonds/.ui.emulator.EmulatorActivity\n-e uri {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - Drastic",
+      "uniqueId": "ndsi.com.dsemu.drastic",
+      "amStartArguments": "-n com.dsemu.drastic/.DraSticActivity\n-d {file.uri}\n--activity-clear-task\n--activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|rar|zip|7z)$"
+    },
+    {
+      "name": "ndsi - MelonDS Nightly",
+      "uniqueId": "ndsi.me.magnum.melonds.nightly",
+      "amStartArguments": "-a me.magnum.melonds.nightly.LAUNCH_ROM\n-n me.magnum.melonds.nightly/me.magnum.melonds.ui.emulator.EmulatorActivity\n-e uri {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - MelonDS Dev (Dual Screen Fork)",
+      "uniqueId": "ndsi.me.magnum.melonds.dev",
+      "amStartArguments": "-a me.magnum.melonds.dev.LAUNCH_ROM\n-n me.magnum.melonds.dev/me.magnum.melonds.ui.emulator.EmulatorActivity\n-e uri {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - MelonDualDS",
+      "uniqueId": "ndsi.me.magnum.melondualds",
+      "amStartArguments": "-a me.magnum.melonds.dev.LAUNCH_ROM\n-n me.magnum.melondualds/me.magnum.melonds.ui.emulator.EmulatorActivity\n-e uri {file.uri}",
+      "acceptedFilenameRegex": "^(.*).(?:nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - NooDS",
+      "uniqueId": "ndsi.com.hydra.noods",
+      "amStartArguments": "-n com.hydra.noods/.FileBrowser\n -e LaunchPath {file.path}",
+      "acceptedFilenameRegex": "^(.*).(?:nds)$"
+    },
+    {
+      "name": "ndsi - RetroArch 64 - melonds",
+      "uniqueId": "ndsi.ra64.melonds",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO melonds\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - RetroArch 64 - melonds ds",
+      "uniqueId": "ndsi.ra64.melondsds",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO melondsds\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - RetroArch 64 - desmume",
+      "uniqueId": "ndsi.ra64.desmume",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - RetroArch 64 - desmume2015",
+      "uniqueId": "ndsi.ra64.desmume2015",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume2015\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - RetroArch 32 - melonds",
+      "uniqueId": "ndsi.ra32.melonds",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO melonds\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - RetroArch 32 - desmume",
+      "uniqueId": "ndsi.ra32.desmume",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - RetroArch 32 - desmume2015",
+      "uniqueId": "ndsi.ra32.desmume2015",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume2015\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - RetroArch - melonds",
+      "uniqueId": "ndsi.ra.melonds",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO melonds\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - RetroArch - melonds ds",
+      "uniqueId": "ndsi.ra.melondsds",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO melondsds\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - RetroArch - desmume",
+      "uniqueId": "ndsi.ra.desmume",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    },
+    {
+      "name": "ndsi - RetroArch - desmume2015",
+      "uniqueId": "ndsi.ra.desmume2015",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO desmume2015\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|nds|zip|7z)$"
+    }
+  ]
+}

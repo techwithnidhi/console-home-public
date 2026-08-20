@@ -1,0 +1,54 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "TurboGrafx-16",
+    "uniqueId": "tg16",
+    "shortname": "tg16",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "tg16 - com.PceEmu",
+      "uniqueId": "tg16.com.PceEmu",
+      "amStartArguments": "-n com.PceEmu/com.imagine.BaseActivity\n -a android.intent.action.VIEW\n -d {file.uri}\n -t application/zip",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|pce|sgx|toc)$"
+    },
+    {
+      "name": "tg16 - RetroArch 64 - mednafen_pce_fast",
+      "uniqueId": "tg16.ra64.mednafen_pce_fast",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_pce_fast\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|pce|toc|zip|7z)$"
+    },
+    {
+      "name": "tg16 - RetroArch 64 - mednafen_pce",
+      "uniqueId": "tg16.ra64.mednafen_pce",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_pce\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|pce|sgx|toc|zip|7z)$"
+    },
+    {
+      "name": "tg16 - RetroArch 32 - mednafen_pce_fast",
+      "uniqueId": "tg16.ra32.mednafen_pce_fast",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_pce_fast\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|pce|toc|zip|7z)$"
+    },
+    {
+      "name": "tg16 - RetroArch 32 - mednafen_pce",
+      "uniqueId": "tg16.ra32.mednafen_pce",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_pce\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|pce|sgx|toc|zip|7z)$"
+    },
+    {
+      "name": "tg16 - RetroArch - mednafen_pce_fast",
+      "uniqueId": "tg16.ra.mednafen_pce_fast",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_pce_fast\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|pce|toc|zip|7z)$"
+    },
+    {
+      "name": "tg16 - RetroArch - mednafen_pce",
+      "uniqueId": "tg16.ra.mednafen_pce",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_pce\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|pce|sgx|toc|zip|7z)$"
+    }
+  ]
+}

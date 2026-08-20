@@ -1,0 +1,48 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Arduboy",
+    "uniqueId": "arduboy",
+    "shortname": "arduboy",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "arduboy - RetroArch 64 - arduous",
+      "uniqueId": "arduboy.ra64.arduous",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO arduous\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:hex)$"
+    },
+    {
+      "name": "arduboy - RetroArch 64 - ardens",
+      "uniqueId": "arduboy.ra64.ardens",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO ardens\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:hex|arduboy)$"
+    },
+    {
+      "name": "arduboy - RetroArch 32 - arduous",
+      "uniqueId": "arduboy.ra32.arduous",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO arduous\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:hex)$"
+    },
+    {
+      "name": "arduboy - RetroArch 32 - ardens",
+      "uniqueId": "arduboy.ra32.ardens",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO ardens\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:hex|arduboy)$"
+    },
+    {
+      "name": "arduboy - RetroArch - arduous",
+      "uniqueId": "arduboy.ra.arduous",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO arduous\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:hex)$"
+    },
+    {
+      "name": "arduboy - RetroArch - ardens",
+      "uniqueId": "arduboy.ra.ardens",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO ardens\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:hex|arduboy)$"
+    }
+  ]
+}

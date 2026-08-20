@@ -1,0 +1,54 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "SuperGrafx",
+    "uniqueId": "supergrafx",
+    "shortname": "supergrafx",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "supergrafx - com.PceEmu",
+      "uniqueId": "supergrafx.com.PceEmu",
+      "amStartArguments": "-n com.PceEmu/com.imagine.BaseActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|pce|sgx|toc)$"
+    },
+    {
+      "name": "supergrafx - RetroArch 64 - mednafen_pce",
+      "uniqueId": "supergrafx.ra64.mednafen_pce",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_pce\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|pce|sgx|toc|zip|7z)$"
+    },
+    {
+      "name": "supergrafx - RetroArch 64 - mednafen_supergrafx",
+      "uniqueId": "supergrafx.ra64.mednafen_supergrafx",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_supergrafx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|pce|sgx|zip|7z)$"
+    },
+    {
+      "name": "supergrafx - RetroArch 32 - mednafen_pce",
+      "uniqueId": "supergrafx.ra32.mednafen_pce",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_pce\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|pce|sgx|toc|zip|7z)$"
+    },
+    {
+      "name": "supergrafx - RetroArch 32 - mednafen_supergrafx",
+      "uniqueId": "supergrafx.ra32.mednafen_supergrafx",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_supergrafx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|pce|sgx|zip|7z)$"
+    },
+    {
+      "name": "supergrafx - RetroArch - mednafen_pce",
+      "uniqueId": "supergrafx.ra.mednafen_pce",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_pce\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|pce|sgx|toc|zip|7z)$"
+    },
+    {
+      "name": "supergrafx - RetroArch - mednafen_supergrafx",
+      "uniqueId": "supergrafx.ra.mednafen_supergrafx",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_supergrafx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|pce|sgx|zip|7z)$"
+    }
+  ]
+}

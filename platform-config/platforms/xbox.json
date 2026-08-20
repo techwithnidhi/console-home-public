@@ -1,0 +1,24 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Microsoft - Xbox",
+    "uniqueId": "xbox",
+    "shortname": "xbox",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "xbox - X1 Box",
+      "uniqueId": "xbox.com.izzy2lost.x1box",
+      "amStartArguments": "-n com.izzy2lost.x1box/.LauncherActivity\n-d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:xiso|iso)$"
+    },
+    {
+      "name": "xbox - hakuX",
+      "uniqueId": "xbox.com.rfandango.haku_x",
+      "amStartArguments": "-n com.rfandango.haku_x/.LauncherActivity\n-d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:xiso|iso)$"
+    }
+  ]
+}

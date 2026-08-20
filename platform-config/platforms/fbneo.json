@@ -1,0 +1,48 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Arcade (FinalBurn Neo)",
+    "uniqueId": "fbneo",
+    "shortname": "fbneo",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "fbneo - RetroArch 64 - fbneo",
+      "uniqueId": "fbneo.ra64.fbneo",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbneo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|ccd|cue|zip)$"
+    },
+    {
+      "name": "fbneo - RetroArch 64 - fbalpha 2012",
+      "uniqueId": "fbneo.ra64.fbalpha2012",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbalpha2012\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:iso|zip|7z)$"
+    },
+    {
+      "name": "fbneo - RetroArch 32 - fbneo",
+      "uniqueId": "fbneo.ra32.fbneo",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbneo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|ccd|cue|zip)$"
+    },
+    {
+      "name": "fbneo - RetroArch 32 - fbalpha 2012",
+      "uniqueId": "fbneo.ra32.fbalpha2012",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbalpha2012\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:iso|zip|7z)$"
+    },
+    {
+      "name": "fbneo - RetroArch - fbneo",
+      "uniqueId": "fbneo.ra.fbneo",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbneo\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|ccd|cue|zip)$"
+    },
+    {
+      "name": "fbneo - RetroArch - fbalpha 2012",
+      "uniqueId": "fbneo.ra.fbalpha2012",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fbalpha2012\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:iso|zip|7z)$"
+    }
+  ]
+}

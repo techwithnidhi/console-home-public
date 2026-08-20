@@ -1,0 +1,48 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Atari 5200",
+    "uniqueId": "atari5200",
+    "shortname": "atari5200",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "atari5200 - RetroArch 64 - atari800",
+      "uniqueId": "atari5200.ra64.atari800",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO atari800\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a52|atr|atx|bin|car|cas|cdm|com|rom|xex|xfd|zip|7z)$"
+    },
+    {
+      "name": "atari5200 - RetroArch 64 - a5200",
+      "uniqueId": "atari5200.ra64.a5200",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO a5200\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a52|bin|zip|7z)$"
+    },
+    {
+      "name": "atari5200 - RetroArch 32 - atari800",
+      "uniqueId": "atari5200.ra32.atari800",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO atari800\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a52|atr|atx|bin|car|cas|cdm|com|rom|xex|xfd|zip|7z)$"
+    },
+    {
+      "name": "atari5200 - RetroArch 32 - a5200",
+      "uniqueId": "atari5200.ra32.a5200",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO a5200\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a52|bin|zip|7z)$"
+    },
+    {
+      "name": "atari5200 - RetroArch - atari800",
+      "uniqueId": "atari5200.ra.atari800",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO atari800\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a52|atr|atx|bin|car|cas|cdm|com|rom|xex|xfd|zip|7z)$"
+    },
+    {
+      "name": "atari5200 - RetroArch - a5200",
+      "uniqueId": "atari5200.ra.a5200",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO a5200\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:a52|bin|zip|7z)$"
+    }
+  ]
+}

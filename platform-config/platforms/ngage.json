@@ -1,0 +1,18 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Nokia N-Gage",
+    "uniqueId": "ngage",
+    "shortname": "ngage",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "ngage - eka2l1",
+      "uniqueId": "ngage.com.github.eka2l1",
+      "amStartArguments": "-n com.github.eka2l1/.emu.EmulatorActivity\n -a android.intent.action.VIEW\n --activity-clear-task\n --activity-clear-top\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:json)$"
+    }
+  ]
+}

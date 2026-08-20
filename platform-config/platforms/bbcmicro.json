@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Acorn Computers BBC Micro",
+    "uniqueId": "bbcmicro",
+    "shortname": "bbcmicro",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "bbcmicro - RetroArch 64 - b2",
+      "uniqueId": "bbcmicro.ra64.b2",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO b2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ssd|dsd)$"
+    },
+    {
+      "name": "bbcmicro - RetroArch 32 - b2",
+      "uniqueId": "bbcmicro.ra32.b2",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO b2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ssd|dsd)$"
+    },
+    {
+      "name": "bbcmicro - RetroArch - b2",
+      "uniqueId": "bbcmicro.ra.b2",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO b2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ssd|dsd)$"
+    }
+  ]
+}

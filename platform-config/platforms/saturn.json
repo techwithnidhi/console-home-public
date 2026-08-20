@@ -1,0 +1,108 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Sega Saturn",
+    "uniqueId": "saturn",
+    "shortname": "saturn",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*(?<!bin)$"
+  },
+  "playerList": [
+    {
+      "name": "saturn - YabaSanshiro 2 Pro",
+      "uniqueId": "saturn.org.devmiyax.yabasanshioro2.pro",
+      "amStartArguments": "-n org.devmiyax.yabasanshioro2.pro/org.uoyabause.android.Yabause\n -a android.intent.action.MAIN\n -e org.uoyabause.android.FileNameUri {file.uri}\n --activity-clear-task\n --activity-clear-top\n --activity-no-history",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|ccd|chd|cue|iso|m3u|mds|toc|zip)$"
+    },
+    {
+      "name": "saturn - YabaSanshiro 2",
+      "uniqueId": "saturn.org.devmiyax.yabasanshioro2",
+      "amStartArguments": "-n org.devmiyax.yabasanshioro2/org.uoyabause.android.Yabause\n -a android.intent.action.VIEW\n -e org.uoyabause.android.FileNameUri {file.path}\n --activity-clear-task\n --activity-clear-top\n --activity-no-history",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|ccd|chd|cue|iso|m3u|mds|toc|zip)$"
+    },
+    {
+      "name": "saturn - YabaSanshiro Pro",
+      "uniqueId": "saturn.org.uoyabause.android.pro",
+      "amStartArguments": "-n org.uoyabause.android.pro/org.uoyabause.android.Yabause\n -a android.intent.action.VIEW\n -e org.uoyabause.android.FileNameEx {file.path}\n --activity-clear-task\n --activity-clear-top\n --activity-no-history",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|ccd|chd|cue|iso|m3u|mds|toc|zip)$"
+    },
+    {
+      "name": "saturn - YabaSanshiro",
+      "uniqueId": "saturn.org.uoyabause.android",
+      "amStartArguments": "-n org.uoyabause.android/org.uoyabause.android.Yabause\n -a android.intent.action.VIEW\n -e org.uoyabause.android.FileNameEx {file.path}\n --activity-clear-task\n --activity-clear-top\n --activity-no-history",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|ccd|chd|cue|iso|m3u|mds|toc|zip)$"
+    },
+    {
+      "name": "saturn - Saturn.EMU",
+      "uniqueId": "saturn.com.explusalpha.SaturnEmu",
+      "amStartArguments": "-n com.explusalpha.SaturnEmu/com.imagine.BaseActivity\n -d {file.path}\n",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|toc)$"
+    },
+    {
+      "name": "saturn - RetroArch 64 - beetle saturn",
+      "uniqueId": "saturn.ra64.mednafen_saturn",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_saturn\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|toc)$"
+    },
+    {
+      "name": "saturn - RetroArch 64 - yabasanshiro",
+      "uniqueId": "saturn.ra64.yabasanshiro",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO yabasanshiro\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|ccd|chd|cue|iso|mds|zip)$"
+    },
+    {
+      "name": "saturn - RetroArch 64 - yabause",
+      "uniqueId": "saturn.ra64.yabause",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO yabause\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|ccd|chd|cue|iso|m3u|mds|zip)$"
+    },
+    {
+      "name": "saturn - RetroArch 64 - ymir",
+      "uniqueId": "saturn.ra64.ymir",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO ymir\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|iso|m3u|mds)$"
+    },
+    {
+      "name": "saturn - RetroArch 32 - beetle saturn",
+      "uniqueId": "saturn.ra32.mednafen_saturn",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_saturn\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|toc)$"
+    },
+    {
+      "name": "saturn - RetroArch 32 - yabasanshiro",
+      "uniqueId": "saturn.ra32.yabasanshiro",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO yabasanshiro\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|ccd|chd|cue|iso|mds|zip)$"
+    },
+    {
+      "name": "saturn - RetroArch 32 - yabause",
+      "uniqueId": "saturn.ra32.yabause",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO yabause\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|ccd|chd|cue|iso|m3u|mds|zip)$"
+    },
+    {
+      "name": "saturn - RetroArch - beetle saturn",
+      "uniqueId": "saturn.ra.mednafen_saturn",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_saturn\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|m3u|toc)$"
+    },
+    {
+      "name": "saturn - RetroArch - yabasanshiro",
+      "uniqueId": "saturn.ra.yabasanshiro",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO yabasanshiro\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|ccd|chd|cue|iso|mds|zip)$"
+    },
+    {
+      "name": "saturn - RetroArch - yabause",
+      "uniqueId": "saturn.ra.yabause",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO yabause\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|ccd|chd|cue|iso|m3u|mds|zip)$"
+    },
+    {
+      "name": "saturn - RetroArch - ymir",
+      "uniqueId": "saturn.ra.ymir",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO ymir\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ccd|chd|cue|iso|m3u|mds)$"
+    }
+  ]
+}

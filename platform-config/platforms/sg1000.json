@@ -1,0 +1,48 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Sega SG-1000",
+    "uniqueId": "sg1000",
+    "shortname": "sg1000",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "sg1000 - RetroArch 64 - gearsystem",
+      "uniqueId": "sg1000.ra64.gearsystem",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gearsystem\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:sms|gg|sg|bin|rom|7z|zip)$"
+    },
+    {
+      "name": "sg1000 - RetroArch 64 - bluemsx",
+      "uniqueId": "sg1000.ra64.bluemsx",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO bluemsx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cas|col|dsk|m3u|mx1|mx2|ri|rom|sc|sg|zip|7z)$"
+    },
+    {
+      "name": "sg1000 - RetroArch 32 - gearsystem",
+      "uniqueId": "sg1000.ra32.gearsystem",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gearsystem\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:sms|gg|sg|bin|rom|7z|zip)$"
+    },
+    {
+      "name": "sg1000 - RetroArch 32 - bluemsx",
+      "uniqueId": "sg1000.ra32.bluemsx",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO bluemsx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cas|col|dsk|m3u|mx1|mx2|ri|rom|sc|sg|zip|7z)$"
+    },
+    {
+      "name": "sg1000 - RetroArch - gearsystem",
+      "uniqueId": "sg1000.ra.gearsystem",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gearsystem\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:sms|gg|sg|bin|rom|7z|zip)$"
+    },
+    {
+      "name": "sg1000 - RetroArch - bluemsx",
+      "uniqueId": "sg1000.ra.bluemsx",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO bluemsx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cas|col|dsk|m3u|mx1|mx2|ri|rom|sc|sg|zip|7z)$"
+    }
+  ]
+}

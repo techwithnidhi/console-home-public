@@ -1,0 +1,48 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Amstrad CPC",
+    "uniqueId": "cpc",
+    "shortname": "cpc",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "cpc - RetroArch 64 - crocods",
+      "uniqueId": "cpc.ra64.crocods",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO crocods\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dsk|kcr|sna)$"
+    },
+    {
+      "name": "cpc - RetroArch 64 - cap32",
+      "uniqueId": "cpc.ra64.cap32",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO cap32\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cdt|cpr|dsk|m3u|sna|tap|voc|zip)$"
+    },
+    {
+      "name": "cpc - RetroArch 32 - crocods",
+      "uniqueId": "cpc.ra32.crocods",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO crocods\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dsk|kcr|sna)$"
+    },
+    {
+      "name": "cpc - RetroArch 32 - cap32",
+      "uniqueId": "cpc.ra32.cap32",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO cap32\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cdt|cpr|dsk|m3u|sna|tap|voc|zip)$"
+    },
+    {
+      "name": "cpc - RetroArch - crocods",
+      "uniqueId": "cpc.ra.crocods",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO crocods\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dsk|kcr|sna)$"
+    },
+    {
+      "name": "cpc - RetroArch - cap32",
+      "uniqueId": "cpc.ra.cap32",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO cap32\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cdt|cpr|dsk|m3u|sna|tap|voc|zip)$"
+    }
+  ]
+}

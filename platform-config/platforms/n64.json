@@ -1,0 +1,90 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Nintendo 64",
+    "uniqueId": "n64",
+    "shortname": "n64",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "n64 - org.mupen64plusae.v3.fzurita",
+      "uniqueId": "n64.org.mupen64plusae.v3.fzurita",
+      "amStartArguments": "-n org.mupen64plusae.v3.fzurita/paulscode.android.mupen64plusae.SplashActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|ndd|u1|v64|z64)$"
+    },
+    {
+      "name": "n64 - org.mupen64plusae.v3.alpha",
+      "uniqueId": "n64.org.mupen64plusae.v3.alpha",
+      "amStartArguments": "-n org.mupen64plusae.v3.alpha/paulscode.android.mupen64plusae.SplashActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|ndd|u1|v64|z64|zip|7z)$"
+    },
+    {
+      "name": "n64 - org.mupen64plusae.v3.fzurita.pro",
+      "uniqueId": "n64.org.mupen64plusae.v3.fzurita.pro",
+      "amStartArguments": "-n org.mupen64plusae.v3.fzurita.pro/paulscode.android.mupen64plusae.SplashActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|ndd|u1|v64|z64|zip|7z)$"
+    },
+    {
+      "name": "n64 - paulscode.android.mupen64plusae",
+      "uniqueId": "n64.paulscode.android.mupen64plusae",
+      "amStartArguments": "-n paulscode.android.mupen64plusae/.MainActivity\n -a android.intent.action.VIEW\n -d {file.path}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|ndd|u1|v64|z64)$"
+    },
+    {
+      "name": "n64 - RetroArch 64 - mupen64plus_next_gles3",
+      "uniqueId": "n64.ra64.mupen64plus_next_gles3",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mupen64plus_next_gles3\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|u1|v64|z64|zip|7z)$"
+    },
+    {
+      "name": "n64 - RetroArch 64 - mupen64plus_next_gles2",
+      "uniqueId": "n64.ra64.mupen64plus_next_gles2",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mupen64plus_next_gles2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|u1|v64|z64|zip|7z)$"
+    },
+    {
+      "name": "n64 - RetroArch 64 - parallel_n64",
+      "uniqueId": "n64.ra64.parallel_n64",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO parallel_n64\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|ndd|u1|v64|z64)$"
+    },
+    {
+      "name": "n64 - RetroArch 32 - mupen64plus_next_gles3",
+      "uniqueId": "n64.ra32.mupen64plus_next_gles3",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mupen64plus_next_gles3\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|u1|v64|z64|zip|7z)$"
+    },
+    {
+      "name": "n64 - RetroArch 32 - mupen64plus_next_gles2",
+      "uniqueId": "n64.ra32.mupen64plus_next_gles2",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mupen64plus_next_gles2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|u1|v64|z64|zip|7z)$"
+    },
+    {
+      "name": "n64 - RetroArch 32 - parallel_n64",
+      "uniqueId": "n64.ra32.parallel_n64",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO parallel_n64\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|ndd|u1|v64|z64)$"
+    },
+    {
+      "name": "n64 - RetroArch - mupen64plus_next_gles3",
+      "uniqueId": "n64.ra.mupen64plus_next_gles3",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mupen64plus_next_gles3\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|u1|v64|z64|zip|7z)$"
+    },
+    {
+      "name": "n64 - RetroArch - mupen64plus_next_gles2",
+      "uniqueId": "n64.ra.mupen64plus_next_gles2",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mupen64plus_next_gles2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|u1|v64|z64|zip|7z)$"
+    },
+    {
+      "name": "n64 - RetroArch - parallel_n64",
+      "uniqueId": "n64.ra.parallel_n64",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO parallel_n64\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|n64|ndd|u1|v64|z64)$"
+    }
+  ]
+}

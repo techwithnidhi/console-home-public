@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "ZX Spectrum",
+    "uniqueId": "zxspectrum",
+    "shortname": "zxspectrum",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "zxspectrum - RetroArch 64 - fuse",
+      "uniqueId": "zxspectrum.ra64.fuse",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fuse\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dsk|rzx|scl|tap|trd|tzx|z80|zip|7z)$"
+    },
+    {
+      "name": "zxspectrum - RetroArch 32 - fuse",
+      "uniqueId": "zxspectrum.ra32.fuse",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fuse\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dsk|rzx|scl|tap|trd|tzx|z80|zip|7z)$"
+    },
+    {
+      "name": "zxspectrum - RetroArch - fuse",
+      "uniqueId": "zxspectrum.ra.fuse",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fuse\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:dsk|rzx|scl|tap|trd|tzx|z80|zip|7z)$"
+    }
+  ]
+}

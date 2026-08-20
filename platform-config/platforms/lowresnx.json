@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "LowRes NX",
+    "uniqueId": "lowresnx",
+    "shortname": "lowresnx",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "lowresnx - RetroArch 64 - lowresnx",
+      "uniqueId": "lowresnx.ra64.lowresnx",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO lowresnx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nx|zip)$"
+    },
+    {
+      "name": "lowresnx - RetroArch 32 - lowresnx",
+      "uniqueId": "lowresnx.ra32.lowresnx",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO lowresnx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nx|zip)$"
+    },
+    {
+      "name": "lowresnx - RetroArch - lowresnx",
+      "uniqueId": "lowresnx.ra.lowresnx",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO lowresnx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nx|zip)$"
+    }
+  ]
+}

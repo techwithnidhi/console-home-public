@@ -1,0 +1,48 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Commodore Amiga",
+    "uniqueId": "amiga",
+    "shortname": "amiga",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "amiga - RetroArch 64 - puae",
+      "uniqueId": "amiga.ra64.puae",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO puae\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|adf|adz|ccd|chd|cue|dms|fdi|hdf|hdz|info|ipf|iso|lha|m3u|mds|nrg|rp9|slave|uae|zip)$"
+    },
+    {
+      "name": "amiga - RetroArch 64 - puae2021",
+      "uniqueId": "amiga.ra64.puae2021",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO puae2021\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|adf|adz|ccd|chd|cue|dms|fdi|hdf|hdz|info|ipf|iso|lha|m3u|mds|nrg|rp9|slave|uae|zip)$"
+    },
+    {
+      "name": "amiga - RetroArch 32 - puae",
+      "uniqueId": "amiga.ra32.puae",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO puae\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|adf|adz|ccd|chd|cue|dms|fdi|hdf|hdz|info|ipf|iso|lha|m3u|mds|nrg|rp9|slave|uae|zip)$"
+    },
+    {
+      "name": "amiga - RetroArch 32 - puae2021",
+      "uniqueId": "amiga.ra32.puae2021",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO puae2021\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|adf|adz|ccd|chd|cue|dms|fdi|hdf|hdz|info|ipf|iso|lha|m3u|mds|nrg|rp9|slave|uae|zip)$"
+    },
+    {
+      "name": "amiga - RetroArch - puae",
+      "uniqueId": "amiga.ra.puae",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO puae\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|adf|adz|ccd|chd|cue|dms|fdi|hdf|hdz|info|ipf|iso|lha|m3u|mds|nrg|rp9|slave|uae|zip)$"
+    },
+    {
+      "name": "amiga - RetroArch - puae2021",
+      "uniqueId": "amiga.ra.puae2021",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO puae2021\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|adf|adz|ccd|chd|cue|dms|fdi|hdf|hdz|info|ipf|iso|lha|m3u|mds|nrg|rp9|slave|uae|zip)$"
+    }
+  ]
+}

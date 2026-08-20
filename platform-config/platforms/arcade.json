@@ -1,0 +1,132 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Arcade",
+    "uniqueId": "arcade",
+    "shortname": "arcade",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "mame - com.seleuco.mame4droid",
+      "uniqueId": "mame.com.seleuco.mame4droid",
+      "amStartArguments": "-n com.seleuco.mame4droid/.MAME4droid\n -a android.intent.action.VIEW\n -d {file.uri}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|chd|cmd|zip)$"
+    },
+    {
+      "name": "mame - com.seleuco.mame4droid 2024",
+      "uniqueId": "mame.com.seleuco.mame4d2024",
+      "amStartArguments": "-n com.seleuco.mame4d2024/com.seleuco.mame4droid.MAME4droid\n -a android.intent.action.VIEW\n -d {file.uri}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|chd|cmd|zip)$"
+    },
+    {
+      "name": "mame - RetroArch 64 - mame2003",
+      "uniqueId": "mame.ra64.mame2003",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2003\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "mame - RetroArch 64 - mame2003_midway",
+      "uniqueId": "mame.ra64.mame2003_midway",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2003_midway\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "mame - RetroArch 64 - mame2003_plus",
+      "uniqueId": "mame.ra64.mame2003_plus",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2003_plus\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "mame - RetroArch 64 - mame",
+      "uniqueId": "mame.ra64.mamearcade",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mamearcade\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|chd|cmd|zip)$"
+    },
+    {
+      "name": "mame - RetroArch 64 - mame2000",
+      "uniqueId": "mame.ra64.mame2000",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2000\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|chd|zip)$"
+    },
+    {
+      "name": "mame - RetroArch 64 - mame2010",
+      "uniqueId": "mame.ra64.mame2010",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2010\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|chd|zip)$"
+    },
+    {
+      "name": "mame - RetroArch 32 - mame2003",
+      "uniqueId": "mame.ra32.mame2003",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2003\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "mame - RetroArch 32 - mame2003_midway",
+      "uniqueId": "mame.ra32.mame2003_midway",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2003_midway\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "mame - RetroArch 32 - mame2003_plus",
+      "uniqueId": "mame.ra32.mame2003_plus",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2003_plus\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "mame - RetroArch 32 - mame",
+      "uniqueId": "mame.ra32.mamearcade",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mamearcade\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|chd|cmd|zip)$"
+    },
+    {
+      "name": "mame - RetroArch 32 - mame2000",
+      "uniqueId": "mame.ra32.mame2000",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2000\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|chd|zip)$"
+    },
+    {
+      "name": "mame - RetroArch 32 - mame2010",
+      "uniqueId": "mame.ra32.mame2010",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2010\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|chd|zip)$"
+    },
+    {
+      "name": "mame - RetroArch - mame2003",
+      "uniqueId": "mame.ra.mame2003",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2003\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "mame - RetroArch - mame2003_midway",
+      "uniqueId": "mame.ra.mame2003_midway",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2003_midway\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "mame - RetroArch - mame2003_plus",
+      "uniqueId": "mame.ra.mame2003_plus",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2003_plus\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "mame - RetroArch - mame",
+      "uniqueId": "mame.ra.mamearcade",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mamearcade\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|chd|cmd|zip)$"
+    },
+    {
+      "name": "mame - RetroArch - mame2000",
+      "uniqueId": "mame.ra.mame2000",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2000\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|chd|zip)$"
+    },
+    {
+      "name": "mame - RetroArch - mame2010",
+      "uniqueId": "mame.ra.mame2010",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mame2010\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|chd|zip)$"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Pokemon Mini",
+    "uniqueId": "pokemini",
+    "shortname": "pokemini",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "pokemini - RetroArch 64 - pokemini",
+      "uniqueId": "pokemini.ra64.pokemini",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO pokemini\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:min|zip|7z)$"
+    },
+    {
+      "name": "pokemini - RetroArch 32 - pokemini",
+      "uniqueId": "pokemini.ra32.pokemini",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO pokemini\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:min|zip|7z)$"
+    },
+    {
+      "name": "pokemini - RetroArch - pokemini",
+      "uniqueId": "pokemini.ra.pokemini",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO pokemini\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:min|zip|7z)$"
+    }
+  ]
+}

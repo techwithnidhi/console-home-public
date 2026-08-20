@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Commodore - PET",
+    "uniqueId": "pet",
+    "shortname": "pet",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "pet - RetroArch 64 - vice xpet",
+      "uniqueId": "pet.ra64.vice_xpet",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vice_xpet\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|crt|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|lnx|p00|prg|t64|tap|x64|x6z|zip)$"
+    },
+    {
+      "name": "pet - RetroArch 32 - vice xpet",
+      "uniqueId": "pet.ra32.vice_xpet",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vice_xpet\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cmd|crt|d2m|d4m|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|m3u|nbz|nib|p00|prg|t64|tap|vfl|vsf|x64|x6z|zip)$"
+    },
+    {
+      "name": "pet - RetroArch - vice xpet",
+      "uniqueId": "pet.ra.vice_xpet",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vice_xpet\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|cmd|crt|d2m|d4m|d64|d6z|d71|d7z|d80|d81|d82|d8z|g41|g4z|g64|g6z|gz|m3u|nbz|nib|p00|prg|t64|tap|vfl|vsf|x64|x6z|zip)$"
+    }
+  ]
+}

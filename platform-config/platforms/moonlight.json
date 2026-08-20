@@ -1,0 +1,24 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Moonlight Streaming",
+    "uniqueId": "moonlight",
+    "shortname": "moonlight",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "artemis",
+      "uniqueId": "moonlight.com.limelight.noir",
+      "amStartArguments": "-n com.limelight.noir/com.limelight.ShortcutTrampoline\n -a android.intent.action.VIEW\n -d {file.uri}\n",
+      "acceptedFilenameRegex": "^(.*)\\.(?:art)$"
+    },
+    {
+      "name": "moonlight",
+      "uniqueId": "moonlight.com.limelight",
+      "amStartArguments": "-n com.limelight/com.limelight.ShortcutTrampoline\n --es UUID UUIDHERE\n --es AppId {tags.moonlight_id}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:moonlight)$"
+    }
+  ]
+}

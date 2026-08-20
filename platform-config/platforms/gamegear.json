@@ -1,0 +1,120 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Sega Game Gear",
+    "uniqueId": "gamegear",
+    "shortname": "gamegear",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "gamegear - com.androidemu.gg",
+      "uniqueId": "gamegear.com.androidemu.gg",
+      "amStartArguments": "-n com.androidemu.gg/.EmulatorActivity\n -a android.intent.action.VIEW\n -d {file.path}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|bms|col|gg|rom|sg|sms)$"
+    },
+    {
+      "name": "gamegear - MasterGear",
+      "uniqueId": "gamegear.com.fms.mg",
+      "amStartArguments": "-n com.fms.mg/com.fms.emulib.MainActivity\n -a android.intent.action.VIEW\n -d {file.uri}\n --activity-clear-task\n --activity-clear-top\n --activity-no-history",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gg|sms)$"
+    },
+    {
+      "name": "gamegear - Pizza Boy SC Pro",
+      "uniqueId": "gamegear.it.dbtecno.pizzaboyscpro",
+      "amStartArguments": "-n it.dbtecno.pizzaboyscpro/.MainActivity\n -e rom_uri {file.uri}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gg|zip)$"
+    },
+    {
+      "name": "gamegear - RetroArch 64 - genesis_plus_gx",
+      "uniqueId": "gamegear.ra64.genesis_plus_gx",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:68k|bin|chd|cue|gen|gg|iso|md|mdx|sg|smd|sms|zip|7z)$"
+    },
+    {
+      "name": "gamegear - RetroArch 64 - genesis_plus_gx_wide",
+      "uniqueId": "gamegear.ra64.genesis_plus_gx_wide",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx_wide\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:68k|bin|chd|cue|gen|gg|iso|md|mdx|sg|smd|sms|zip|7z)$"
+    },
+    {
+      "name": "gamegear - RetroArch 64 - smsplus",
+      "uniqueId": "gamegear.ra64.smsplus",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO smsplus\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|col|gg|rom|sg|sms|zip|7z)$"
+    },
+    {
+      "name": "gamegear - RetroArch 64 - picodrive",
+      "uniqueId": "gamegear.ra64.picodrive",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO picodrive\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:32x|68k|bin|chd|cue|gen|gg|iso|m3u|md|pco|sgd|smd|sms|7z|zip)$"
+    },
+    {
+      "name": "gamegear - RetroArch 64 - gearsystem",
+      "uniqueId": "gamegear.ra64.gearsystem",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gearsystem\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:sms|gg|sg|bin|rom|7z|zip)$"
+    },
+    {
+      "name": "gamegear - RetroArch 32 - genesis_plus_gx",
+      "uniqueId": "gamegear.ra32.genesis_plus_gx",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:68k|bin|chd|cue|gen|gg|iso|md|mdx|sg|smd|sms|zip|7z)$"
+    },
+    {
+      "name": "gamegear - RetroArch 32 - genesis_plus_gx_wide",
+      "uniqueId": "gamegear.ra32.genesis_plus_gx_wide",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx_wide\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:68k|bin|chd|cue|gen|gg|iso|md|mdx|sg|smd|sms|zip|7z)$"
+    },
+    {
+      "name": "gamegear - RetroArch 32 - smsplus",
+      "uniqueId": "gamegear.ra32.smsplus",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO smsplus\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|col|gg|rom|sg|sms|zip|7z)$"
+    },
+    {
+      "name": "gamegear - RetroArch 32 - picodrive",
+      "uniqueId": "gamegear.ra32.picodrive",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO picodrive\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:32x|68k|bin|chd|cue|gen|gg|iso|m3u|md|pco|sgd|smd|sms|7z|zip)$"
+    },
+    {
+      "name": "gamegear - RetroArch 32 - gearsystem",
+      "uniqueId": "gamegear.ra32.gearsystem",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gearsystem\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:sms|gg|sg|bin|rom|7z|zip)$"
+    },
+    {
+      "name": "gamegear - RetroArch - genesis_plus_gx",
+      "uniqueId": "gamegear.ra.genesis_plus_gx",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:68k|bin|chd|cue|gen|gg|iso|md|mdx|sg|smd|sms|zip|7z)$"
+    },
+    {
+      "name": "gamegear - RetroArch - genesis_plus_gx_wide",
+      "uniqueId": "gamegear.ra.genesis_plus_gx_wide",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO genesis_plus_gx_wide\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:68k|bin|chd|cue|gen|gg|iso|md|mdx|sg|smd|sms|zip|7z)$"
+    },
+    {
+      "name": "gamegear - RetroArch - smsplus",
+      "uniqueId": "gamegear.ra.smsplus",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO smsplus\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|col|gg|rom|sg|sms|zip|7z)$"
+    },
+    {
+      "name": "gamegear - RetroArch - picodrive",
+      "uniqueId": "gamegear.ra.picodrive",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO picodrive\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:32x|68k|bin|chd|cue|gen|gg|iso|m3u|md|pco|sgd|smd|sms|7z|zip)$"
+    },
+    {
+      "name": "gamegear - RetroArch - gearsystem",
+      "uniqueId": "gamegear.ra.gearsystem",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO gearsystem\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:sms|gg|sg|bin|rom|7z|zip)$"
+    }
+  ]
+}

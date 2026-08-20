@@ -1,0 +1,18 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "idTech4A++",
+    "uniqueId": "idtech",
+    "shortname": "idtech",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "idtech - idTech4A++",
+      "uniqueId": "idtech.com.karin.idTech4Amm",
+      "amStartArguments": "-n com.karin.idTech4Amm/com.n0n3m4.q3e.Q3EMain\n-e game {tags.idtech}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:idtech)$"
+    }
+  ]
+}

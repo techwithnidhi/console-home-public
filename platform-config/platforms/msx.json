@@ -1,0 +1,54 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "MSX",
+    "uniqueId": "msx",
+    "shortname": "msx",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "msx - com.explusalpha.MsxEmu",
+      "uniqueId": "msx.com.explusalpha.MsxEmu",
+      "amStartArguments": "-n com.explusalpha.MsxEmu/com.imagine.BaseActivity\n -a android.intent.action.VIEW\n -d {file.path}\n -t application/zip",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cas|col|dsk|fdi|m3u|mx1|mx2|ri|rom|sc|sg)$"
+    },
+    {
+      "name": "msx - RetroArch 64 - fmsx",
+      "uniqueId": "msx.ra64.fmsx",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fmsx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cas|dsk|fdi|m3u|mx1|mx2|rom|zip|7z)$"
+    },
+    {
+      "name": "msx - RetroArch 64 - bluemsx",
+      "uniqueId": "msx.ra64.bluemsx",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO bluemsx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cas|col|dsk|m3u|mx1|mx2|ri|rom|sc|sg|zip|7z)$"
+    },
+    {
+      "name": "msx - RetroArch 32 - fmsx",
+      "uniqueId": "msx.ra32.fmsx",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fmsx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cas|dsk|fdi|m3u|mx1|mx2|rom|zip|7z)$"
+    },
+    {
+      "name": "msx - RetroArch 32 - bluemsx",
+      "uniqueId": "msx.ra32.bluemsx",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO bluemsx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cas|col|dsk|m3u|mx1|mx2|ri|rom|sc|sg|zip|7z)$"
+    },
+    {
+      "name": "msx - RetroArch - fmsx",
+      "uniqueId": "msx.ra.fmsx",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fmsx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cas|dsk|fdi|m3u|mx1|mx2|rom|zip|7z)$"
+    },
+    {
+      "name": "msx - RetroArch - bluemsx",
+      "uniqueId": "msx.ra.bluemsx",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO bluemsx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cas|col|dsk|m3u|mx1|mx2|ri|rom|sc|sg|zip|7z)$"
+    }
+  ]
+}

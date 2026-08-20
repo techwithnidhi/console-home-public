@@ -1,0 +1,78 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Famicom Disk System",
+    "uniqueId": "fds",
+    "shortname": "fds",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "fds - com.explusalpha.NesEmu",
+      "uniqueId": "fds.com.explusalpha.NesEmu",
+      "amStartArguments": "-n com.explusalpha.NesEmu/com.imagine.BaseActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|fds|nes|nsf|qd|rom|unf|unif)$"
+    },
+    {
+      "name": "fds - com.androidemu.nes",
+      "uniqueId": "fds.com.androidemu.nes",
+      "amStartArguments": "-n com.androidemu.nes/.EmulatorActivity\n -a android.intent.action.VIEW\n -d {file.path}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|fds|nes|nsf|qd|rom|unf|unif)$"
+    },
+    {
+      "name": "fds - RetroArch 64 - nestopia",
+      "uniqueId": "fds.ra64.nestopia",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO nestopia\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "fds - RetroArch 64 - fceumm",
+      "uniqueId": "fds.ra64.fceumm",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fceumm\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "fds - RetroArch 64 - mesen",
+      "uniqueId": "fds.ra64.mesen",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mesen\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "fds - RetroArch 32 - nestopia",
+      "uniqueId": "fds.ra32.nestopia",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO nestopia\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "fds - RetroArch 32 - fceumm",
+      "uniqueId": "fds.ra32.fceumm",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fceumm\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "fds - RetroArch 32 - mesen",
+      "uniqueId": "fds.ra32.mesen",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mesen\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "fds - RetroArch - nestopia",
+      "uniqueId": "fds.ra.nestopia",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO nestopia\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "fds - RetroArch - fceumm",
+      "uniqueId": "fds.ra.fceumm",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fceumm\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "fds - RetroArch - mesen",
+      "uniqueId": "fds.ra.mesen",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mesen\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    }
+  ]
+}

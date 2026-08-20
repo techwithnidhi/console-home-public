@@ -1,0 +1,30 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Arcadia 2001",
+    "uniqueId": "arcadia",
+    "shortname": "arcadia",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "arcadia - DroidArcadia",
+      "uniqueId": "arcadia.com.amigan.droidarcadia",
+      "amStartArguments": "-n com.amigan.droidarcadia/.MainActivity\n -a android.intent.action.VIEW\n -d {file.uri}\n -t application/zip\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    },
+    {
+      "name": "arcadia - RetroArch 64 - mess",
+      "uniqueId": "arcadia.ra64.mess",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mamemess\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cmd)$"
+    },
+    {
+      "name": "arcadia - RetroArch - mess",
+      "uniqueId": "arcadia.ra.mess",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mamemess\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:cmd)$"
+    }
+  ]
+}

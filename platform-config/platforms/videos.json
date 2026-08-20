@@ -1,0 +1,72 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Video Player",
+    "uniqueId": "videos",
+    "shortname": "videos",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "videos - VLC for Android",
+      "uniqueId": "videos.org.videolan.vlc",
+      "amStartArguments": "-n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity\n -a android.intent.action.VIEW\n -d {file.path}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mp4|avi|mpg|mpeg|mov|mkv|webm|m4a)$"
+    },
+    {
+      "name": "videos - mpv-android",
+      "uniqueId": "videos.is.xyz.mpv",
+      "amStartArguments": "-n is.xyz.mpv/is.xyz.mpv.MPVActivity\n -a android.intent.action.VIEW\n -d {file.uri}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mp4|avi|mpg|mpeg|mov|mkv|webm|m4a)$"
+    },
+    {
+      "name": "videos - Next Player",
+      "uniqueId": "videos.dev.anilbeesetti.nextplayer",
+      "amStartArguments": "-n dev.anilbeesetti.nextplayer/.feature.player.PlayerActivity\n -a android.intent.action.VIEW\n -d {file.path}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mp4|avi|mpg|mpeg|mov|mkv|webm|m4a)$"
+    },
+    {
+      "name": "videos - Nova Video Player",
+      "uniqueId": "videos.org.courville.nova",
+      "amStartArguments": "-n org.courville.nova/com.archos.mediacenter.video.player.PlayerActivity\n -a android.intent.action.VIEW\n -d {file.path}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mp4|avi|mpg|mpeg|mov|mkv|webm|m4a)$"
+    },
+    {
+      "name": "videos - MXPlayer (Ad-sipported)",
+      "uniqueId": "videos.com.mxtech.videoplayer.ad",
+      "amStartArguments": "-n com.mxtech.videoplayer.ad/.ActivityScreen\n -a android.intent.action.VIEW\n -d {file.path}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mp4|avi|mpg|mpeg|mov|mkv|webm|m4a)$"
+    },
+    {
+      "name": "videos - MXPlayer Pro",
+      "uniqueId": "videos.com.mxtech.videoplayer.pro",
+      "amStartArguments": "-n com.mxtech.videoplayer.pro/.ActivityScreen\n -a android.intent.action.VIEW\n -d {file.path}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mp4|avi|mpg|mpeg|mov|mkv|webm|m4a)$"
+    },
+    {
+      "name": "videos - Kodi",
+      "uniqueId": "videos.org.xbmc.kodi",
+      "amStartArguments": "-n org.xbmc.kodi/.Main\n -a android.intent.action.VIEW\n -d {file.path}\n",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mp4|avi|mpg|mpeg|mov|mkv|webm|m4a)$"
+    },
+    {
+      "name": "videos - RetroArch 64 - ffmpeg",
+      "uniqueId": "videos.ra64.ffmpeg",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO ffmpeg\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mp4|avi|mpg|mpeg|mov|mkv|webm|m4a)$"
+    },
+    {
+      "name": "videos - RetroArch 32 - ffmpeg",
+      "uniqueId": "videos.ra32.ffmpeg",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO ffmpeg\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mp4|avi|mpg|mpeg|mov|mkv|webm|m4a)$"
+    },
+    {
+      "name": "videos - RetroArch - ffmpeg",
+      "uniqueId": "videos.ra.ffmpeg",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO ffmpeg\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:mp4|avi|mpg|mpeg|mov|mkv|webm|m4a)$"
+    }
+  ]
+}

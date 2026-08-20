@@ -1,0 +1,18 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "XBox Game Pass",
+    "uniqueId": "xcloud",
+    "shortname": "xcloud",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "xcloud - XBPlay - Remote Play",
+      "uniqueId": "xbplay.com.studio08.xbgamestream",
+      "amStartArguments": "-a xcloudstart\n -n com.studio08.xbgamestream/com.studio08.xbgamestream.PWAMainMenuActivity\n --es titleId {tags.titleId}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:xcloud)$"
+    }
+  ]
+}

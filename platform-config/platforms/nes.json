@@ -1,0 +1,114 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Nintendo Entertainment System",
+    "uniqueId": "nes",
+    "shortname": "nes",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "nes - com.explusalpha.NesEmu",
+      "uniqueId": "nes.com.explusalpha.NesEmu",
+      "amStartArguments": "-n com.explusalpha.NesEmu/com.imagine.BaseActivity\n -a android.intent.action.VIEW\n -d {file.uri}\n -t application/zip",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|fds|nes|nsf|qd|rom|unf|unif)$"
+    },
+    {
+      "name": "nes - com.androidemu.nes",
+      "uniqueId": "nes.com.androidemu.nes",
+      "amStartArguments": "-n com.androidemu.nes/.EmulatorActivity\n -a android.intent.action.VIEW\n -d {file.path}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:bin|fds|nes|nsf|qd|rom|unf|unif)$"
+    },
+    {
+      "name": "nes - RetroArch 64 - nestopia",
+      "uniqueId": "nes.ra64.nestopia",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO nestopia\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch 64 - fceumm",
+      "uniqueId": "nes.ra64.fceumm",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fceumm\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch 64 - mesen",
+      "uniqueId": "nes.ra64.mesen",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mesen\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch 64 - quicknes",
+      "uniqueId": "nes.ra64.quicknes",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO quicknes\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nes|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch 64 - bnes",
+      "uniqueId": "nes.ra64.bnes",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO bnes\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nes|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch 32 - nestopia",
+      "uniqueId": "nes.ra32.nestopia",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO nestopia\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch 32 - fceumm",
+      "uniqueId": "nes.ra32.fceumm",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fceumm\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch 32 - mesen",
+      "uniqueId": "nes.ra32.mesen",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mesen\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch 32 - quicknes",
+      "uniqueId": "nes.ra32.quicknes",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO quicknes\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nes|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch 32 - bnes",
+      "uniqueId": "nes.ra32.bnes",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO bnes\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nes|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch - nestopia",
+      "uniqueId": "nes.ra.nestopia",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO nestopia\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch - fceumm",
+      "uniqueId": "nes.ra.fceumm",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO fceumm\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch - mesen",
+      "uniqueId": "nes.ra.mesen",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mesen\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:fds|nes|unf|unif|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch - quicknes",
+      "uniqueId": "nes.ra.quicknes",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO quicknes\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nes|zip|7z)$"
+    },
+    {
+      "name": "nes - RetroArch - bnes",
+      "uniqueId": "nes.ra.bnes",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO bnes\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nes|zip|7z)$"
+    }
+  ]
+}

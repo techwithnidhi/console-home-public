@@ -1,0 +1,84 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Quake II Game Engine",
+    "uniqueId": "quake2",
+    "shortname": "quake2",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "quake2 - RetroArch 64 - vitaquake2",
+      "uniqueId": "quake2.ra64.vitaquake2",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    },
+    {
+      "name": "quake2 - RetroArch 64 - vitaquake2 rogue",
+      "uniqueId": "quake2.ra64.vitaquake2-rogue_libretro",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2-rogue\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    },
+    {
+      "name": "quake2 - RetroArch 64 - vitaquake2 xatrix",
+      "uniqueId": "quake2.ra64.vitaquake2-xatrix_libretro",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2-xatrix\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    },
+    {
+      "name": "quake2 - RetroArch 64 - vitaquake2 zaero",
+      "uniqueId": "quake2.ra64.vitaquake2-zaero_libretro",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2-zaero\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    },
+    {
+      "name": "quake2 - RetroArch 32 - vitaquake2",
+      "uniqueId": "quake2.ra32.vitaquake2",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    },
+    {
+      "name": "quake2 - RetroArch 32 - vitaquake2 rogue",
+      "uniqueId": "quake2.ra32.vitaquake2-rogue_libretro",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2-rogue\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    },
+    {
+      "name": "quake2 - RetroArch 32 - vitaquake2 xatrix",
+      "uniqueId": "quake2.ra32.vitaquake2-xatrix_libretro",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2-xatrix\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    },
+    {
+      "name": "quake2 - RetroArch 32 - vitaquake2 zaero",
+      "uniqueId": "quake2.ra32.vitaquake2-zaero_libretro",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2-zaero\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    },
+    {
+      "name": "quake2 - RetroArch - vitaquake2",
+      "uniqueId": "quake2.ra.vitaquake2",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    },
+    {
+      "name": "quake2 - RetroArch - vitaquake2 rogue",
+      "uniqueId": "quake2.ra.vitaquake2-rogue_libretro",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2-rogue\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    },
+    {
+      "name": "quake2 - RetroArch - vitaquake2 xatrix",
+      "uniqueId": "quake2.ra.vitaquake2-xatrix_libretro",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2-xatrix\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    },
+    {
+      "name": "quake2 - RetroArch - vitaquake2 zaero",
+      "uniqueId": "quake2.ra.vitaquake2-zaero_libretro",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO vitaquake2-zaero\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:pak)$"
+    }
+  ]
+}

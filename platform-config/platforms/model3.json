@@ -1,0 +1,18 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Sega Model 3",
+    "uniqueId": "model3",
+    "shortname": "model3",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "model3 - Super3",
+      "uniqueId": "model3.com.izzy2lost.super3",
+      "amStartArguments": "-n com.izzy2lost.super3/.MainActivity\n-d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:zip)$"
+    }
+  ]
+}

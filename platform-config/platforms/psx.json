@@ -1,0 +1,132 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Sony PlayStation",
+    "uniqueId": "psx",
+    "shortname": "psx",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*(?<!bin)$"
+  },
+  "playerList": [
+    {
+      "name": "psx - Duckstation",
+      "uniqueId": "psx.com.github.stenzek.duckstation",
+      "amStartArguments": "-n com.github.stenzek.duckstation/.EmulationActivity\n-e bootPath {file.uri}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*).(?:bin|chd|cue|ecm|exe|img|iso|m3u|mds|pbp|psexe|psf)$"
+    },
+    {
+      "name": "psx - Duckstation (Legacy)",
+      "uniqueId": "psx.com.github.stenzek.duckstation",
+      "amStartArguments": "-n com.github.stenzek.duckstation/.EmulationActivity\n-e bootPath {file.path}\n --ez resumeState 0\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*).(?:bin|chd|cue|ecm|exe|img|iso|m3u|mds|pbp|psexe|psf)$"
+    },
+    {
+      "name": "psx - FPse",
+      "uniqueId": "psx.com.emulator.fpse",
+      "amStartArguments": "-n com.emulator.fpse/.Main\n-a android.intent.action.VIEW\n -d {file.path}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*).(?:bin|chd|cue|ecm|exe|img|iso|m3u|mds|pbp|psexe|psf)$"
+    },
+    {
+      "name": "psx - FPse64",
+      "uniqueId": "psx.com.emulator.fpse64",
+      "amStartArguments": "-n com.emulator.fpse64/.Main\n-a android.intent.action.VIEW\n -d {file.path}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*).(?:bin|chd|cue|ecm|exe|img|iso|m3u|mds|pbp|psexe|psf)$"
+    },
+    {
+      "name": "psx - ePSXe",
+      "uniqueId": "psx.com.epsxe.ePSXe",
+      "amStartArguments": "-n com.epsxe.ePSXe/.ePSXe\n -a android.intent.action.MAIN\n -e com.epsxe.ePSXe.isoName {file.path}\n --activity-clear-task\n --activity-clear-top",
+      "acceptedFilenameRegex": "^(.*).(?:bin|chd|cue|ecm|exe|img|iso|m3u|mds|pbp|psexe|psf)$"
+    },
+    {
+      "name": "psx - Retroarch 64 - beetle psx hw",
+      "uniqueId": "psx.ra64.mednafen_psx_hw",
+      "amStartArguments": " -n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n-e ROM {file.path}\n -e LIBRETRO mednafen_psx_hw\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:cue|toc|m3u|ccd|exe|pbp|chd)$"
+    },
+    {
+      "name": "psx - Retroarch 64 - beetle psx",
+      "uniqueId": "psx.ra64.mednafen_psx",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n-e ROM {file.path}\n -e LIBRETRO mednafen_psx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:cue|toc|m3u|ccd|exe|pbp|chd)$"
+    },
+    {
+      "name": "psx - RetroArch 64 - duckstation",
+      "uniqueId": "psx.ra64.duckstation",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO duckstation\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:bin|chd|cue|ecm|exe|img|iso|m3u|mds|pbp|psexe|psf)$"
+    },
+    {
+      "name": "psx - RetroArch 64 - pcsx_rearmed",
+      "uniqueId": "psx.ra64.pcsx_rearmed",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO pcsx_rearmed\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:bin|cbn|ccd|chd|cue|img|m3u|mdf|pbp|toc)$"
+    },
+    {
+      "name": "psx - RetroArch 64 - swanstation",
+      "uniqueId": "psx.ra64.swanstation",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO swanstation\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:bin|chd|cue|ecm|exe|img|iso|m3u|mds|pbp|psexe|psf)$"
+    },
+    {
+      "name": "psx - Retroarch 32 - beetle psx hw",
+      "uniqueId": "psx.ra32.mednafen_psx_hw",
+      "amStartArguments": " -n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n-e ROM {file.path}\n -e LIBRETRO mednafen_psx_hw\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:cue|toc|m3u|ccd|exe|pbp|chd)$"
+    },
+    {
+      "name": "psx - Retroarch 32 - beetle psx",
+      "uniqueId": "psx.ra32.mednafen_psx",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n-e ROM {file.path}\n -e LIBRETRO mednafen_psx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:cue|toc|m3u|ccd|exe|pbp|chd)$"
+    },
+    {
+      "name": "psx - RetroArch 32 - duckstation",
+      "uniqueId": "psx.ra32.duckstation",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO duckstation\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:bin|chd|cue|ecm|exe|img|iso|m3u|mds|pbp|psexe|psf)$"
+    },
+    {
+      "name": "psx - RetroArch 32 - pcsx_rearmed",
+      "uniqueId": "psx.ra32.pcsx_rearmed",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO pcsx_rearmed\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:bin|cbn|ccd|chd|cue|img|m3u|mdf|pbp|toc)$"
+    },
+    {
+      "name": "psx - RetroArch 32 - swanstation",
+      "uniqueId": "psx.ra32.swanstation",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO swanstation\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:bin|chd|cue|ecm|exe|img|iso|m3u|mds|pbp|psexe|psf)$"
+    },
+    {
+      "name": "psx - Retroarch - beetle psx hw",
+      "uniqueId": "psx.ra.mednafen_psx_hw",
+      "amStartArguments": " -n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n-e ROM {file.path}\n -e LIBRETRO mednafen_psx_hw\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:cue|toc|m3u|ccd|exe|pbp|chd)$"
+    },
+    {
+      "name": "psx - Retroarch - beetle psx",
+      "uniqueId": "psx.ra.mednafen_psx",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n-e ROM {file.path}\n -e LIBRETRO mednafen_psx\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:cue|toc|m3u|ccd|exe|pbp|chd)$"
+    },
+    {
+      "name": "psx - RetroArch - duckstation",
+      "uniqueId": "psx.ra.duckstation",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO duckstation\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:bin|chd|cue|ecm|exe|img|iso|m3u|mds|pbp|psexe|psf)$"
+    },
+    {
+      "name": "psx - RetroArch - pcsx_rearmed",
+      "uniqueId": "psx.ra.pcsx_rearmed",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO pcsx_rearmed\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:bin|cbn|ccd|chd|cue|img|m3u|mdf|pbp|toc)$"
+    },
+    {
+      "name": "psx - RetroArch - swanstation",
+      "uniqueId": "psx.ra.swanstation",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO swanstation\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*).(?:bin|chd|cue|ecm|exe|img|iso|m3u|mds|pbp|psexe|psf)$"
+    }
+  ]
+}

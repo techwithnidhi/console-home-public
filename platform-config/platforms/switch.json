@@ -1,0 +1,102 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Nintendo Switch",
+    "uniqueId": "switch",
+    "shortname": "switch",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "switch - Skyline",
+      "uniqueId": "switch.skyline.emu",
+      "amStartArguments": "-n skyline.emu/emu.skyline.EmulationActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - Strato (Official)",
+      "uniqueId": "switch.org.stratoemu.strato",
+      "amStartArguments": "-n org.stratoemu.strato/org.stratoemu.strato.EmulationActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - eden",
+      "uniqueId": "switch.dev.eden.eden_emulator",
+      "amStartArguments": "-n dev.eden.eden_emulator/org.yuzu.yuzu_emu.activities.EmulationActivity\n -a android.nfc.action.TECH_DISCOVERED\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - eden (Optimized)",
+      "uniqueId": "switch.com.miHoYo.Yuanshen.eden",
+      "amStartArguments": "-n com.miHoYo.Yuanshen/org.yuzu.yuzu_emu.activities.EmulationActivity\n -a android.nfc.action.TECH_DISCOVERED\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - eden (Legacy)",
+      "uniqueId": "switch.dev.legacy.eden_emulator",
+      "amStartArguments": "-n dev.legacy.eden_emulator/org.yuzu.yuzu_emu.activities.EmulationActivity\n -a android.nfc.action.TECH_DISCOVERED\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - eden (Nightly)",
+      "uniqueId": "switch.dev.eden.eden_nightly",
+      "amStartArguments": "-n dev.eden.eden_nightly/org.yuzu.yuzu_emu.activities.EmulationActivity\n -a android.nfc.action.TECH_DISCOVERED\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - eden (Nightly New)",
+      "uniqueId": "switch.dev.eden.eden_emulator.nightly",
+      "amStartArguments": "-n dev.eden.eden_emulator.nightly/org.yuzu.yuzu_emu.activities.EmulationActivity\n -a android.nfc.action.TECH_DISCOVERED\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - Yuzu",
+      "uniqueId": "switch.org.yuzu.yuzu_emu",
+      "amStartArguments": "-n org.yuzu.yuzu_emu/org.yuzu.yuzu_emu.activities.EmulationActivity\n -a android.nfc.action.TECH_DISCOVERED\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - Yuzu (early access)",
+      "uniqueId": "switch.org.yuzu.yuzu_emu.ea",
+      "amStartArguments": "-n org.yuzu.yuzu_emu.ea/org.yuzu.yuzu_emu.activities.EmulationActivity\n -a android.nfc.action.TECH_DISCOVERED\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - Suyu",
+      "uniqueId": "switch.dev.suyu.suyu_emu.relWithDebInfo",
+      "amStartArguments": "-n dev.suyu.suyu_emu.relWithDebInfo/dev.suyu.suyu_emu.activities.EmulationActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - Sudachi (Mainline)",
+      "uniqueId": "switch.org.sudachi.sudachi_emu",
+      "amStartArguments": "-n org.sudachi.sudachi_emu/org.sudachi.sudachi_emu.activities.EmulationActivity\n -a android.nfc.action.TECH_DISCOVERED\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - Sudachi (Early Access)",
+      "uniqueId": "switch.org.sudachi.sudachi_emu.ea",
+      "amStartArguments": "-n org.sudachi.sudachi_emu.ea/org.sudachi.sudachi_emu.activities.EmulationActivity\n -a android.nfc.action.TECH_DISCOVERED\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - Citron",
+      "uniqueId": "switch.org.citron.citron_emu",
+      "amStartArguments": "-n org.citron.citron_emu/org.citron.citron_emu.activities.EmulationActivity\n -a android.nfc.action.TECH_DISCOVERED\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - Kenji-NX",
+      "uniqueId": "switch.org.kenjinx.android",
+      "amStartArguments": "-n org.kenjinx.android/.MainActivity\n -a org.kenjinx.android.LAUNCH_GAME\n -e bootPath {file.uri}\n",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    },
+    {
+      "name": "switch - Benji-SC",
+      "uniqueId": "switch.org.benjisc.android",
+      "amStartArguments": "-n org.benjisc.android/org.kenjinx.android.MainActivity\n -a org.kenjinx.android.LAUNCH_GAME\n -e bootPath {file.uri}\n",
+      "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|xci|nsp)$"
+    }
+  ]
+}

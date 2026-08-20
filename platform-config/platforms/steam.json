@@ -1,0 +1,54 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Steam",
+    "uniqueId": "steam",
+    "shortname": "steam",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "steam - GameHub Lite",
+      "uniqueId": "steam.gamehub.lite",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n gamehub.lite/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es steamAppId {tags.steamappid}\n --ez autoStartGame true",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid)$"
+    },
+    {
+      "name": "steam - GameHub Lite (Antutu)",
+      "uniqueId": "steam.gamehub.lite.antutu",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.antutu.ABenchMark/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es steamAppId {tags.steamappid}\n --ez autoStartGame true",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid)$"
+    },
+    {
+      "name": "steam - GameHub Lite (PUBG)",
+      "uniqueId": "steam.gamehub.lite.pubg",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.tencent.ig/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es steamAppId {tags.steamappid}\n --ez autoStartGame true",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid)$"
+    },
+    {
+      "name": "steam - GameHub Lite (Ludashi)",
+      "uniqueId": "steam.gamehub.lite.ludashi",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.ludashi.aibench/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es steamAppId {tags.steamappid}\n --ez autoStartGame true",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid)$"
+    },
+    {
+      "name": "steam - BannerHub (Normal)",
+      "uniqueId": "steam.banner.hub",
+      "amStartArguments": "-a banner.hub.LAUNCH_GAME\n -n banner.hub/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es steamAppId {tags.steamappid}\n --ez autoStartGame true",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid)$"
+    },
+    {
+      "name": "steam - BannerHub Lite (Normal)",
+      "uniqueId": "steam.banner.hub.lite",
+      "amStartArguments": "-a banner.hub.lite.LAUNCH_GAME\n -n banner.hub.lite/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es steamAppId {tags.steamappid}\n --ez autoStartGame true",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid)$"
+    },
+    {
+      "name": "steam - GameNative",
+      "uniqueId": "steam.app.gamenative",
+      "amStartArguments": "-a app.gamenative.LAUNCH_GAME\n -n app.gamenative/.MainActivity\n --ei app_id {tags.steamappid}\n --es game_source STEAM",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid)$"
+    }
+  ]
+}

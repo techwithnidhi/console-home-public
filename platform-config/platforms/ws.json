@@ -1,0 +1,36 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "WonderSwan",
+    "uniqueId": "ws",
+    "shortname": "ws",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "ws - com.explusalpha.SwanEmu",
+      "uniqueId": "ws.com.explusalpha.SwanEmu",
+      "amStartArguments": "-n com.explusalpha.SwanEmu/com.imagine.BaseActivity\n -a android.intent.action.VIEW\n -d {file.uri}\n -t application/zip",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ws|wsc|pc2|7z|zip)$"
+    },
+    {
+      "name": "ws - Retroarch 64 - Beetle Cygne",
+      "uniqueId": "ws.ra64.mednafen_wswan",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_wswan\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ws|wsc|pc2|7z|zip)$"
+    },
+    {
+      "name": "ws - Retroarch 32 - Beetle Cygne",
+      "uniqueId": "ws.ra32.mednafen_wswan",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_wswan\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ws|wsc|pc2|7z|zip)$"
+    },
+    {
+      "name": "ws - Retroarch - Beetle Cygne",
+      "uniqueId": "ws.ra.mednafen_wswan",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO mednafen_wswan\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:ws|wsc|pc2|7z|zip)$"
+    }
+  ]
+}

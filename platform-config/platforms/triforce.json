@@ -1,0 +1,24 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Triforce",
+    "uniqueId": "triforce",
+    "shortname": "triforce",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$"
+  },
+  "playerList": [
+    {
+      "name": "triforce - Dolphin",
+      "uniqueId": "triforce.org.dolphinemu.dolphinemu",
+      "amStartArguments": "-n org.dolphinemu.dolphinemu/.ui.main.MainActivity\n -a android.intent.action.MAIN\n -e AutoStartFile {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gcz|iso|wia|gcm)$"
+    },
+    {
+      "name": "triforce - Dolphin (Debug Build)",
+      "uniqueId": "triforce.org.dolphinemu.dolphinemu.debug",
+      "amStartArguments": "-n org.dolphinemu.dolphinemu.debug/org.dolphinemu.dolphinemu.ui.main.MainActivity\n -a android.intent.action.MAIN\n -e AutoStartFile {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:gcz|iso|wia|gcm)$"
+    }
+  ]
+}

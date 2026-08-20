@@ -1,0 +1,54 @@
+{
+  "databaseVersion": 1,
+  "revisionNumber": 1,
+  "platform": {
+    "name": "Dreamcast",
+    "uniqueId": "dreamcast",
+    "shortname": "dreamcast",
+    "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*(?<!bin)$"
+  },
+  "playerList": [
+    {
+      "name": "dreamcast - io.recompiled.redream",
+      "uniqueId": "dreamcast.io.recompiled.redream",
+      "amStartArguments": "-n io.recompiled.redream/.MainActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|bin|cdi|chd|cue|elf|gdi|lst|m3u|zip)$"
+    },
+    {
+      "name": "dreamcast - com.reicast.emulator",
+      "uniqueId": "dreamcast.com.reicast.emulator",
+      "amStartArguments": "-n com.reicast.emulator/.MainActivity\n -a android.intent.action.VIEW\n -d {file.path}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|bin|cdi|chd|cue|elf|gdi|lst|zip)$"
+    },
+    {
+      "name": "dreamcast - com.flycast.emulator",
+      "uniqueId": "dreamcast.com.flycast.emulator",
+      "amStartArguments": "-n com.flycast.emulator/com.flycast.emulator.MainActivity\n -a android.intent.action.VIEW\n -d {file.uri}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|bin|cdi|chd|cue|elf|gdi|lst|zip)$"
+    },
+    {
+      "name": "dreamcast - com.flycast.emulator (dev build)",
+      "uniqueId": "dreamcast.com.flycast.emulator",
+      "amStartArguments": "-n com.flycast.emulator/com.flycast.emulator.MainActivity\n -a android.intent.action.VIEW\n -d {file.path}",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|bin|cdi|chd|cue|elf|gdi|lst|zip)$"
+    },
+    {
+      "name": "dreamcast - RetroArch 64 - flycast",
+      "uniqueId": "dreamcast.ra64.flycast",
+      "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO flycast\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|bin|cdi|chd|cue|elf|gdi|lst|m3u|zip)$"
+    },
+    {
+      "name": "dreamcast - RetroArch 32 - flycast",
+      "uniqueId": "dreamcast.ra32.flycast",
+      "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO flycast\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|bin|cdi|chd|cue|elf|gdi|lst|m3u|zip)$"
+    },
+    {
+      "name": "dreamcast - RetroArch - flycast",
+      "uniqueId": "dreamcast.ra.flycast",
+      "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n -e ROM {file.path}\n -e LIBRETRO flycast\n -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+      "acceptedFilenameRegex": "^(.*)\\.(?:7z|bin|cdi|chd|cue|elf|gdi|lst|m3u|zip)$"
+    }
+  ]
+}
